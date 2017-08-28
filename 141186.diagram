@@ -1,0 +1,21 @@
+format 212
+
+classinstance 128002 class_ref 852354 // RegistrationLoginInterface
+  name ""   xyz -1.0985 8.24048 2000 life_line_z 2000
+classinstance 128130 class_ref 858882 // DescriptionNavigationInterface
+  name ""   xyz 160.623 54.2405 2000 life_line_z 2000
+classinstance 128258 class_ref 859010 // ProblemIdentificationInterface
+  name ""   xyz 340.658 98.9873 2000 life_line_z 2000
+classinstance 128386 class_ref 859138 // SolutionOptionsInterface
+  name ""   xyz 513.35 146.073 2000 life_line_z 2000
+classinstance 128514 class_ref 859266 // AssistanceInterface
+  name ""   xyz 1137.65 332.24 2000 life_line_z 2000
+classinstance 128642 class_ref 859266 // AssistanceInterface
+  name ""   xyz 665.814 194 2000 life_line_z 2000
+classinstance 128898 class_ref 859394 // TradeoffPreferencesInterface
+  name ""   xyz 796.115 245.24 2000 life_line_z 2000
+classinstance 129026 class_ref 859522 // ProbabilisticOutcomesInterface
+  name ""   xyz 1262.17 386.24 2000 life_line_z 2000
+classinstance 129154 class_ref 859650 // CapacityAssessmentInterface
+  name ""   xyz 964.39 285.24 2000 life_line_z 2000
+end

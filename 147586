@@ -1,0 +1,2097 @@
+format 212
+"Messages" // UML::Messages
+  revision 9
+  modified_by 2 "JamesECabral"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  classview 179586 "RegistrationLoginOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 212610 "RegistrationLoginOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1544706 "loginInformation"
+	private type class_ref 845570 // LoginInformation
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 134530 "RegistrationLoginOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 212610 // RegistrationLoginOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 141314 "RegistrationLoginOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+
+    class 845570 "LoginInformation"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 1544194 "role"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	comment "Pro se, Attorney, 3rd party"
+      end
+
+      attribute 1544066 "timeModified"
+	private type class_ref 213378 // dateTime
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 1543938 "timeCreated"
+	private type class_ref 213378 // dateTime
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 1543810 "sourceOfRegistration"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 1537282 "oauthInfoPacket"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 1537154 "uniqueID"
+	private type class_ref 213762 // id
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+    end
+  end
+
+  classview 204162 "RegistrationLoginInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 860546 "RegistrationLoginInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classinstance 1667714 "RegistrationLoginInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 860546 // RegistrationLoginInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 155522 "RegistrationLoginInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 210690 "DescriptionNavigationInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 845314 "DescriptionNavigationInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1544834 "loginInformation"
+	private type class_ref 845570 // LoginInformation
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1544962 "returnToSource"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1545602 "outcome"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1660162 "DescriptionNavigationInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 845314 // DescriptionNavigationInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 147970 "DescriptionNavigationInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 210818 "DescriptionNavigationOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 845442 "DescriptionNavigationOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1545090 "returnToSource"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1545218 "acknowledgementAcceptance"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1545346 "outcome"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1660034 "DescriptionNavigationOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 845442 // DescriptionNavigationOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 147842 "DescriptionNavigationOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 210946 "ProblemIdentificationInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 845698 "ProblemIdentificationInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1545730 "issueDescription"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1545858 "locationInformation"
+	private explicit_type ""
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+      end
+
+      attribute 1562114 "urgencyDescription"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1660290 "ProblemIdentificationInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 845698 // ProblemIdentificationInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 148098 "ProblemIdentificationInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 211074 "ProblemIdentificationOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 845826 "ProblemIdentificationOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1553026 "legalProblem"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Is it a legal problem?"
+      end
+
+      attribute 1545986 "issueIdentification"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "issue id#"
+      end
+
+      attribute 1552898 "issueDescription"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1546242 "urgencyDescription"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1546114 "urgencyAsseement"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1546370 "jurisdiction"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1660418 "ProblemIdentificationOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 845826 // ProblemIdentificationOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 148226 "ProblemIdentificationOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 217602 "SolutionOptionsInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 859778 "SolutionOptionsInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1559554 "problemIdentification"
+	private type class_ref 845826 // ProblemIdentificationOutputMessage
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1560194 "capacityInformation"
+	private type class_ref 860034 // CapacityAssessmentOutputMessage
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1560322 "userPreferences"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1560450 "existenceOfSolutionProvider"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1560834 "userAuthorizationToShareData"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1560962 "financialInformation"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classdiagram 154754 "SolutionOptionsInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+
+    classinstance 1666946 "SolutionOptionsInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 859778 // SolutionOptionsInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+  end
+
+  classview 217730 "SolutionOptionsOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 859906 "SolutionOptionsOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1560578 "solutionSelected"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1560706 "masterRecord"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "A collection of the output messages from previously completed modules"
+      end
+
+      attribute 1561090 "financialEligibilityPrediction"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1667074 "SolutionOptionsOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 859906 // SolutionOptionsOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 154882 "SolutionOptionsOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 217858 "CapacityAssessmentOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 860034 "CapacityAssessmentOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1582594 "capacityAssessment"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "capacity assessment categories include language proficiencies, literacy, disabilities, immigration status, prior legal experience, transportation needs"
+      end
+    end
+
+    classinstance 1667202 "CapacityAssessmentOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 860034 // CapacityAssessmentOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 155010 "CapacityAssessmentOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 217986 "CapacityAssessmentInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 860162 "CapacityAssessmentInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1560066 "immigrationStatus"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1559938 "disabilities"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1559810 "languageProficiency"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1559682 "computerLiteracy"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Include both self reported assessment and potentially automated skills assessment (computer analytics) of how many errors a litigant makes"
+      end
+
+      attribute 1582722 "technologyAvailability"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1667330 "CapacityAssessmentInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 860162 // CapacityAssessmentInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 155138 "CapacityAssessmentInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 218114 "AssistanceInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 860290 "AssistanceInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1561218 "solutionProviderCapacity"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1568642 "solutionProviderProfile"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1561346 "selectedSolutionType"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1561474 "legalIssue"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1561602 "financialEligibilityPrediction"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1561986 "userAuthorizationToShareData"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1667458 "AssistanceInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 860290 // AssistanceInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 155266 "AssistanceInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 218242 "AssistanceOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 860418 "AssistanceOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1561730 "solutionProviderSelected"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1561858 "masterData"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1667586 "AssistanceOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 860418 // AssistanceOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 155394 "AssistanceOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 224770 "TradeoffPreferencesInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 867074 "TradeoffPreferencesInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1568770 "userTradeoffPreferences"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "rank order or time, cost, process complexity, due process, predictability of outcome, enforceability"
+      end
+    end
+
+    classinstance 1674242 "TradeoffPreferencesInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 867074 // TradeoffPreferencesInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 162050 "TradeoffPreferencesInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 224898 "TradeoffPreferencesOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 867202 "TradeoffPreferencesOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1568898 "userTradeoffPreferences"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1674370 "TradeoffPreferencesOutputMessage"
+      type class_ref 867202 // TradeoffPreferencesOutputMessage
+      attributes
+        end
+      relations
+        end
+    end
+
+    classdiagram 162178 "TradeoffPreferencesOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 225026 "ProbabilisticOutcomesInputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 867330 "ProbabilisticOutcomesInputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1569154 "masterData"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 1569282 "caseData"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "case historical data including case type, claim type, judgment details, etc."
+      end
+
+      attribute 1575810 "issueData"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "issue historical data"
+      end
+
+      attribute 1576066 "issueDescription"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1674498 "ProbabilisticOutcomesInputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 867330 // ProbabilisticOutcomesInputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 162306 "ProbabilisticOutcomesInputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+
+  classview 225154 "ProbabilisticOutcomesOutputMessage"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 867458 "ProbabilisticOutcomesOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 1575938 "pathwaySelected"
+	private explicit_type ""
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 1674626 "ProbabilisticOutcomesOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 867458 // ProbabilisticOutcomesOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 162434 "ProbabilisticOutcomesOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+  end
+end

@@ -1,0 +1,50 @@
+format 212
+
+usecasecanvas 128002 usecase_ref 134530 // Identify Issues
+  xyzwh 187.903 21.4498 3005 64 32 label_xy 133 55
+end
+classcanvas 128130 class_ref 838402 // Litigant
+  simpleclassdiagramsettings end
+  xyz 10.5732 241.879 2000
+end
+usecasecanvas 128258 usecase_ref 134658 // Determine Outcomes
+  xyzwh 191.107 109.84 3005 64 32 label_xy 125 145
+end
+usecasecanvas 128386 usecase_ref 134786 // Select Resolution
+  xyzwh 193.847 192.821 3005 64 32 label_xy 130 226
+end
+usecasecanvas 128642 usecase_ref 135042 // Select Type of Assistance
+  xyzwh 191.842 266.456 3005 64 32 label_xy 107 300
+end
+usecasecanvas 128898 usecase_ref 135170 // Find Assistance
+  xyzwh 187.903 366.662 3005 64 32 label_xy 132 401
+end
+usecasecanvas 129410 usecase_ref 135810 // Facilitate Intake
+  xyzwh 182.495 452.848 3005 64 32 label_xy 145 486
+end
+usecasecanvas 129538 usecase_ref 135938 // Report Outcomes
+  xyzwh 176.821 557.993 3005 64 32 label_xy 105 591
+end
+classcanvas 129794 class_ref 838658 // SolutionProvider
+  simpleclassdiagramsettings end
+  xyz 374.457 471.325 2000
+end
+line 130434 --->
+  from ref 128130 z 3006 to ref 128002
+line 130562 --->
+  from ref 128130 z 3006 to ref 128258
+line 130690 --->
+  from ref 128130 z 3006 to ref 128386
+line 130818 --->
+  from ref 128130 z 3006 to ref 128642
+line 130946 --->
+  from ref 128130 z 3006 to ref 128898
+line 131458 --->
+  from ref 129794 z 3006 to ref 129410
+line 131586 --->
+  from ref 129794 z 3006 to ref 129538
+line 131842 --->
+  from ref 129794 z 3006 to ref 128898
+line 131970 --->
+  from ref 128130 z 3006 to ref 129538
+end

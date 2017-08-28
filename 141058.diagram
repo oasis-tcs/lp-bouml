@@ -1,0 +1,71 @@
+format 212
+
+componentcanvas 128130 component_ref 141058 // RegistrationLoginModule
+  
+  xyzwh 144 146 2000 267 81
+end
+componentcanvas 128258 component_ref 141186 // DescriptionNavigationModule
+  
+  xyzwh 33 287 2000 311 81
+end
+componentcanvas 128386 component_ref 141314 // ProblemIdentificationModule
+  
+  xyzwh 33 493 2000 301 81
+end
+componentcanvas 128514 component_ref 141442 // SolutionOptionsModule
+  
+  xyzwh 141 640 2000 251 81
+end
+componentcanvas 128642 component_ref 141570 // AssistanceModule
+  
+  xyzwh 452 146 2000 251 81
+end
+componentcanvas 128770 component_ref 141698 // TradeoffPreferencesModule
+  
+  xyzwh 519 286 2000 295 81
+end
+componentcanvas 128898 component_ref 141826 // ProbabilisticOutcomesModule
+  
+  xyzwh 494 493 2000 317 81
+end
+componentcanvas 129026 component_ref 141954 // CapacityAssessmentModule
+  
+  xyzwh 450 641 2000 301 81
+end
+componentcanvas 129154 component_ref 148482 // LitigantPortalSystem
+  
+  xyzwh 8 11 0 829 753
+end
+arrowjunctioncanvas 129282 class_ref 852354 // RegistrationLoginInterface
+  xyz 339 241 3005 label_xy 223 260
+arrowjunctioncanvas 129538 class_ref 859266 // AssistanceInterface
+  xyz 537 249 3005 label_xy 464 255
+arrowjunctioncanvas 129794 class_ref 858882 // DescriptionNavigationInterface
+  xyz 207 380 3005 label_xy 71 399
+arrowjunctioncanvas 130050 class_ref 859394 // TradeoffPreferencesInterface
+  xyz 566 395 3005 label_xy 436 414
+arrowjunctioncanvas 130306 class_ref 859010 // ProblemIdentificationInterface
+  xyz 215 456 3005 label_xy 84 475
+arrowjunctioncanvas 130562 class_ref 859522 // ProbabilisticOutcomesInterface
+  xyz 592 453 3005 label_xy 454 472
+arrowjunctioncanvas 130818 class_ref 859138 // SolutionOptionsInterface
+  xyz 284 598 3005 label_xy 208 617
+arrowjunctioncanvas 131074 class_ref 859650 // CapacityAssessmentInterface
+  xyz 557 593 3005 label_xy 425 612
+line 129410 ---O
+  from ref 128130 z 3006 to ref 129282
+line 129666 ---O
+  from ref 128642 z 3006 to ref 129538
+line 129922 ---O
+  from ref 128258 z 3006 to ref 129794
+line 130178 ---O
+  from ref 128770 z 3006 to ref 130050
+line 130434 ---O
+  from ref 128386 z 3006 to ref 130306
+line 130690 ---O
+  from ref 128898 z 3006 to ref 130562
+line 130946 ---O
+  from ref 128514 z 3006 to ref 130818
+line 131202 ---O
+  from ref 129026 z 3006 to ref 131074
+end
