@@ -1,0 +1,7 @@
+format 212
+
+classcanvas 128002 class_ref 859906 // SolutionOptionsOutputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 301 349 2000
+end
+end

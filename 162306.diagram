@@ -1,0 +1,7 @@
+format 212
+
+classcanvas 128130 class_ref 867330 // ProbabilisticOutcomesInputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 95 139 2000
+end
+end

@@ -1,0 +1,7 @@
+format 212
+
+classcanvas 128002 class_ref 845442 // DescriptionNavigationOutputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 278 249 2000
+end
+end

@@ -1,0 +1,688 @@
+format 212
+"UML" // UML
+  revision 14
+  modified_by 2 "JamesECabral"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  usecaseview 134658 "Use Cases"
+    
+    usecasediagramsettings end
+    
+    sequencediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    classdiagramsettings member_max_width 0 end
+    
+    objectdiagramsettings end
+    
+    statediagramsettings
+     end
+    
+    activitydiagramsettings
+     end
+    usecasediagram 134530 "Use Cases"
+      usecasediagramsettings end
+      size A4
+    end
+
+    class 838402 "Litigant"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 838658 "SolutionProvider"
+      visibility package stereotype "actor"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    usecase 134530 "Identify Issues"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help potential litigants identify typical legal problems that they might have.
+Help potential litigants identify related legal problems."
+    end
+
+    usecase 134658 "Determine Outcomes"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help potential litigants determine what outcomes they want."
+    end
+
+    usecase 134786 "Select Resolution"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help potential litigants decide how best to resolve their legal problem"
+    end
+
+    usecase 135042 "Select Type of Assistance"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help litigants decide if they need full legal representation
+Help potential litigants decide what kind of legal assistance they need."
+    end
+
+    usecase 135170 "Find Assistance"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help potential litigants find the kind of legal assistance they want.
+Automatically route eligible clients to appropriate providers."
+    end
+
+    usecase 135298 "Navigate Process"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help litigants navigate the legal process."
+    end
+
+    usecase 135426 "Make Decisions"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help litigants make key decisions about their legal cases."
+    end
+
+    usecase 135554 "Provide Assistance"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Help litigants make key decisions about their legal cases.
+Help litigants execute desired legal actions."
+    end
+
+    usecase 135682 "Route Clients to Providers"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Automatically route eligible clients to appropriate providers."
+    end
+
+    usecase 135810 "Facilitate Intake"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Automatically support provider intake processes."
+    end
+
+    usecase 135938 "Report Outcomes"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Automatically report provider outcome information to the portal
+Collect litigant satisfaction with outcomes"
+    end
+
+    usecase 136066 "Update Provider System"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      objectdiagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      comment "Automatically update provider systems with result data."
+    end
+
+    class 873986 "MasterRecord"
+      visibility package stereotype "entity"
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl "${comment}${@}${visibility}${static}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      php_decl "${comment}${final}${abstract}class ${name}${extends}${implements} {
+${members}}
+"
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl "${comment}${abstract}${custom}valuetype ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      comment "A repository of profile information including legal issues and information about the litigant."
+    end
+  end
+
+  componentview 134530 "Components"
+    //component diagram settings
+    componentdiagramsettings
+     end
+    componentdiagram 141058 "Components"
+      componentdiagramsettings
+       end
+      size A4
+    end
+
+    component 141058 "RegistrationLoginModule"
+      stereotype "service"
+      provided_classes
+	class_ref 852354 // RegistrationLoginInterface
+      end
+      comment "Litigants may use the portal anonymously by not registering or logging in. If users wish to save their inputs or outputs and return at a later time, they must register in a way that enables identification of them in some unique way (although not necessarily in a way that permits actual identification of the person).
+Comments and Issues: Partner organizations will probably want to use their login methods, so the most efficient approach would be a consistent single sign on model for all of the partner organizations. Achieving this goal could be difficult. It is a classic governance problem."
+    end
+
+    component 141186 "DescriptionNavigationModule"
+      stereotype "service"
+      provided_classes
+	class_ref 858882 // DescriptionNavigationInterface
+      end
+      comment "This module describes the capabilities of the portal and provides basic navigation to the desired module or between modules. Users may still enter other modules directly if they know how to get there. They may also navigate directly from one module to another module as desired.
+Comments and Issues: Navigation must work simply and seamlessly regardless of where the user enters the portal and in which order they want to use the various modules."
+    end
+
+    component 141314 "ProblemIdentificationModule"
+      stereotype "service"
+      provided_classes
+	class_ref 859010 // ProblemIdentificationInterface
+      end
+      comment "This module prompts the user to describe their problem in a way that will enable the portal to determine if it is a legal problem. Of course, that determination is not entirely an objective one, so it is more a matter of suggesting available legal strategies when appropriate. The module will prompt for information that enables the portal to determine if it is a legal problem within the scope of the portal, and maps the legal problem to a court case type. Again, there may be several possible case types or causes of action for a particular legal problem, so the module should suggest all alternatives and explain the tradeoffs. If there is not a legal problem, or not one that the portal can respond to, the litigant may still gain value by exercising the solutions module.
+Comments and Issues: Once correctly mapped to the appropriate court case type, there may be rights in certain cases to full representation by a lawyer. The portal should recognize these instances. Of course, a litigant may still choose to forego a lawyer or may decide to acquire their services through an eligible provider, so they still should not bypass the Assistance module.
+Some case types like domestic violence may require emergency responses, so the portal should recommend appropriate actions in those cases. Similarly, some case types should be confidential, possibly requiring different data handling and the exclusion of some information to some partners. Perhaps most innovative and also most challenging, the portal should make the appropriate handoff for cases that are out of scope (not legal problems) if possible."
+    end
+
+    component 141442 "SolutionOptionsModule"
+      stereotype "service"
+      provided_classes
+	class_ref 859138 // SolutionOptionsInterface
+      end
+      comment "If the problem identified is not a legal problem, the portal may suggest several generic non-legal solutions with an appropriate handoff. If the problem is a genuine legal problem, it should suggest several alternative solutions, some of which involve the formal legal system and some of which do not. In both cases the module should provide appropriate tradeoff information to aid the litigant in making a choice.
+Comments and Issues: Some non-traditional options may be appropriate in some cases. For example, in some states one option might be a tribal court. Legal problems that appear to track the traditional court process may be open to various types of diversion at various points in the process. The portal should make those options clear, even where the litigant does not have full control over the decision. Policies around data transparency and access must be made clear to all users of the modules in the portal, especially for this module (and the Capacity Assessment module below)."
+    end
+
+    component 141570 "AssistanceModule"
+      stereotype "service"
+      provided_classes
+	class_ref 859266 // AssistanceInterface
+      end
+      comment "The assistance module will determine whether the litigant likely requires formal representation by a lawyer or not. If so, the portal will provide a set of possible sources of representation with seamless hand off to the selected resource. If a lawyer is not desired by the litigant, the module will determine the most cost effective form of assistance required and hand off the litigant to that assistance seamlessly.
+Comments and Issues: All forms of appropriate assistance, if available, should be described. Some may be less mainstream than others. Common forms include legal aid, court help centers, public libraries, law school clinics, bar-sponsored pro bono clinics and services, and public defenders. More controversial and innovative forms may include unbundling of legal services, the creation of non-lawyer legal services roles, and online dispute resolution websites. The portal must also be intelligent enough to recognize which forms of assistance are constrained to only certain case types or problems."
+    end
+
+    component 141698 "TradeoffPreferencesModule"
+      stereotype "service"
+      provided_classes
+	class_ref 859394 // TradeoffPreferencesInterface
+      end
+      comment "This module assesses the litigant's preferred tradeoffs between cost, time, convenience, and due process. The tradeoff information will be used by other modules to recommend solutions and types of assistance. The links between tradeoff preferences and portal recommendations will be reported transparently.
+Comments and Issues: Describing choices among options with different amounts of due process to litigants in simple and understandable ways when more than one case processing path exists may be challenging. Traditionally, both courts and the bar have been relatively resistant to accommodating litigant preferences, particularly when it entails informational transparency about things like case cost and time to disposition."
+    end
+
+    component 141826 "ProbabilisticOutcomesModule"
+      stereotype "service"
+      provided_classes
+	class_ref 859522 // ProbabilisticOutcomesInterface
+      end
+      comment "For court cases, this module provides descriptions of the most likely or common alternatives and actions in a particular type of case. It will also report probabilistic or statistical information on the likely outcomes of each alternative, based on court data.
+Comments and Issues: Some evidence suggests that most common case types, especially those with many self-represented litigants, often follow only two or three simple case paths, with a very small percentage involving significant case complexity.6 Therefore, courts may be able to provide simple descriptive statistics on what usually happens when each possible path is chosen. Note that the portal does not make any recommendations about which path to take, so there is no issue around the practice of law or giving legal advice. It merely describes what typically happens (win or lose, amounts awarded, etc.)."
+    end
+
+    component 141954 "CapacityAssessmentModule"
+      stereotype "service"
+      provided_classes
+	class_ref 859650 // CapacityAssessmentInterface
+      end
+      comment "This module will assess the capacity of the litigant to both use the portal and to utilize various forms of assistance other than formal representation. This module is optional because not all jurisdictions may choose to include this capability, some litigants may not want to be assessed, and the ability to validly and appropriately assess such capacity is still not well understood.
+Comments and Issues: Considerations such as case complexity or levels of hostility should be handled by the Assistance module. Indices of case complexity may be case type specific. Here we are primarily interested in the ability of the litigant to competently understand information and make certain decisions required by the portal. Attempts to do this to date have not been encouraging. It has either proven to be too difficult or too paternalistic to do successfully."
+    end
+
+    component 148482 "LitigantPortalSystem"
+      stereotype "service"
+    end
+  end
+
+  classview 179330 "Interfaces and Operations"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    sequencediagram 141186 "Sequence1"
+      sequencediagramsettings drawing_language uml end
+      overlapping_bars size 2048x1188
+    end
+
+    class 852354 "RegistrationLoginInterface"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 154882 "GetRegistrationLogin"
+	public return_type class_ref 212610 // RegistrationLoginOutputMessage
+	nparams 1
+	  param in name "" type class_ref 860546 // RegistrationLoginInputMessage
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 858882 "DescriptionNavigationInterface"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 147586 "GetDescriptionNavigation"
+	public return_type class_ref 845442 // DescriptionNavigationOutputMessage
+	nparams 1
+	  param in name "" type class_ref 845314 // DescriptionNavigationInputMessage
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 859010 "ProblemIdentificationInterface"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 147714 "GetProblemIdentification"
+	public return_type class_ref 845826 // ProblemIdentificationOutputMessage
+	nparams 1
+	  param in name "" type class_ref 845698 // ProblemIdentificationInputMessage
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 859138 "SolutionOptionsInterface"
+      visibility package stereotype "interface"
+      cpp_decl "${comment}${template}class ${name}${inherit} {
+${members}};
+${inlines}
+"
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl "class ${name}${inherit}:
+${docstring}${members}
+"
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 147842 "GetSolutionOptions"
+	public return_type class_ref 859906 // SolutionOptionsOutputMessage
+	nparams 1
+	  param in name "" type class_ref 859778 // SolutionOptionsInputMessage
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 859266 "AssistanceInterface"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 147970 "GetAssistance"
+	public return_type class_ref 860418 // AssistanceOutputMessage
+	nparams 1
+	  param in name "" type class_ref 860418 // AssistanceOutputMessage
+	multiplicity "1"
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 859394 "TradeoffPreferencesInterface"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 148098 "GetTradeoffPreferences"
+	public return_type class_ref 867202 // TradeoffPreferencesOutputMessage
+	nparams 1
+	  param in name "" type class_ref 867074 // TradeoffPreferencesInputMessage
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 859522 "ProbabilisticOutcomesInterface"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 148226 "GetProbabilisticOutcomes"
+	public return_type class_ref 867458 // ProbabilisticOutcomesOutputMessage
+	nparams 1
+	  param in name "" type class_ref 867330 // ProbabilisticOutcomesInputMessage
+	
+	
+	
+	
+	
+      end
+    end
+
+    class 859650 "CapacityAssessmentInterface"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      operation 148354 "GetCapacityAssessment"
+	public return_type class_ref 860034 // CapacityAssessmentOutputMessage
+	nparams 1
+	  param in name "" type class_ref 860162 // CapacityAssessmentInputMessage
+	
+	
+	
+	
+	
+      end
+    end
+  end
+
+  package_ref 147586 // Messages
+
+  package_ref 147714 // Base Classes
+end

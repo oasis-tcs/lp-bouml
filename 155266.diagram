@@ -1,0 +1,7 @@
+format 212
+
+classcanvas 128002 class_ref 860290 // AssistanceInputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 393 308 2000
+end
+end
