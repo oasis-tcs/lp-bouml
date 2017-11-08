@@ -1,9 +1,9 @@
 window_sizes 2736 1699 461 2269 1185 445
 cleanlooks_style
-selected component_ref 141442 // SolutionOptionsModule
+selected 
+  package_ref 129 // lp-bouml
 open
   usecaseview_ref 134658 // Use Cases
-  componentview_ref 134530 // Components
   class_ref 852354 // RegistrationLoginInterface
   class_ref 858882 // DescriptionNavigationInterface
   class_ref 859010 // ProblemIdentificationInterface
