@@ -35,4 +35,3 @@ tool "Configure NIEM model generation" "java com.mtgmc.niemtools.Main configure"
 tool "Import NIEM reference model" "java com.mtgmc.niemtools.Main importSchema" Project
 tool "Import NIEM mapping" "java com.mtgmc.niemtools.Main import" Project
 tool "Generate NIEM IEPD" "java com.mtgmc.niemtools.Main export" Project
-tool "" ""

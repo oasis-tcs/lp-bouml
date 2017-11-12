@@ -1,6 +1,6 @@
 format 214
 "lp-bouml"
-  revision 18
+  revision 20
   modified_by 2 "JamesECabral"
 
 
@@ -58,9 +58,9 @@ format 214
   key "exportWSDL" value "true"
   key "exportJSON" value "true"
   key "exportOpenAPI" value "true"
-  package_ref 141058 // UML
-
   package_ref 154242 // NIEM
+
+  package_ref 141058 // UML
 
   package_ref 134530 // niem-profile
 end

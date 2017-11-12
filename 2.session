@@ -1,11 +1,12 @@
 window_sizes 2736 1699 670 2060 1185 445
 cleanlooks_style
-selected operation_ref 147586 // GetDescriptionNavigation
+selected 
+  package_ref 179458 // NIEMReference
 open
-  componentview_ref 134530 // Components
-  class_ref 852354 // RegistrationLoginInterface
-  class_ref 858882 // DescriptionNavigationInterface
   
   package_ref 154242 // NIEM
+  usecaseview_ref 134658 // Use Cases
+  class_ref 852354 // RegistrationLoginInterface
+  class_ref 858882 // DescriptionNavigationInterface
 end
 end
