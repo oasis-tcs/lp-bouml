@@ -1,6 +1,6 @@
 format 214
 "lp-bouml"
-  revision 20
+  revision 14
   modified_by 2 "JamesECabral"
 
 
@@ -39,28 +39,18 @@ format 214
 
   mark_for_import
   
-  ncouples 18
+  ncouples 8
   key "html dir" value "C:\\Users\\JamesECabral\\OneDrive\\xml\\lp\\model"
-  key "IEPDURI" value "https://www.oasis-open.org/committees/lp"
-  key "IEPDName" value "Litigant Portal"
-  key "IEPDVersion" value "1"
-  key "IEPDStatus" value "Working Draft"
-  key "IEPDOrganization" value "OASIS LegalXML Litigant Portal Technical Committee"
+  key "IEPDURI" value "http://local"
+  key "IEPDName" value "IEPD"
+  key "IEPDVersion" value "IEPD"
+  key "IEPDStatus" value "Draft"
+  key "IEPDOrganization" value "Organization"
   key "IEPDContact" value ""
   key "externalSchemas" value ""
-  key "IEPDEmail" value "lp-comment@lists.oasis-open.org"
-  key "IEPDLicense" value "https://www.oasis-open.org/committees/lp/ipr.php"
-  key "IEPDTermsOfService" value "https://www.oasis-open.org/committees/lp/ipr.php"
-  key "IEPDReadMeFile" value "readme.txt"
-  key "IEPDChangeLogFile" value "changelog.txt"
-  key "exportHTML" value "true"
-  key "exportXML" value "true"
-  key "exportWSDL" value "true"
-  key "exportJSON" value "true"
-  key "exportOpenAPI" value "true"
-  package_ref 154242 // NIEM
-
   package_ref 141058 // UML
+
+  package_ref 154242 // NIEM
 
   package_ref 134530 // niem-profile
 end

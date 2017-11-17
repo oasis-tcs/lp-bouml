@@ -1,12 +1,7 @@
-window_sizes 2736 1699 670 2060 1185 445
+window_sizes 2736 1699 461 2269 1185 445
 cleanlooks_style
-selected 
-  package_ref 179458 // NIEMReference
 open
-  
-  package_ref 154242 // NIEM
-  usecaseview_ref 134658 // Use Cases
   class_ref 852354 // RegistrationLoginInterface
-  class_ref 858882 // DescriptionNavigationInterface
+  classview_ref 172802 // Stereotypes
 end
 end
