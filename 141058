@@ -1,6 +1,6 @@
 format 214
 "UML" // UML
-  revision 15
+  revision 16
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -468,6 +468,7 @@ ${members}};
       mysql_decl ""
       
       operation 154882 "GetRegistrationLogin"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 212610 // RegistrationLoginOutputMessage
 	nparams 1
 	  param in name "" type class_ref 860546 // RegistrationLoginInputMessage
@@ -476,8 +477,9 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
-
     end
 
     class 858882 "DescriptionNavigationInterface"
@@ -497,6 +499,7 @@ ${members}};
       mysql_decl ""
       
       operation 147586 "GetDescriptionNavigation"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 845442 // DescriptionNavigationOutputMessage
 	nparams 1
 	  param in name "" type class_ref 845314 // DescriptionNavigationInputMessage
@@ -505,6 +508,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
     end
 
@@ -525,6 +530,7 @@ ${members}};
       mysql_decl ""
       
       operation 147714 "GetProblemIdentification"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 845826 // ProblemIdentificationOutputMessage
 	nparams 1
 	  param in name "" type class_ref 845698 // ProblemIdentificationInputMessage
@@ -533,6 +539,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
     end
 
@@ -558,6 +566,7 @@ ${members}};
       mysql_decl ""
       
       operation 147842 "GetSolutionOptions"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 859906 // SolutionOptionsOutputMessage
 	nparams 1
 	  param in name "" type class_ref 859778 // SolutionOptionsInputMessage
@@ -566,6 +575,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
     end
 
@@ -586,6 +597,7 @@ ${members}};
       mysql_decl ""
       
       operation 147970 "GetAssistance"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 860418 // AssistanceOutputMessage
 	nparams 1
 	  param in name "" type class_ref 860418 // AssistanceOutputMessage
@@ -595,6 +607,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
     end
 
@@ -615,6 +629,7 @@ ${members}};
       mysql_decl ""
       
       operation 148098 "GetTradeoffPreferences"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 867202 // TradeoffPreferencesOutputMessage
 	nparams 1
 	  param in name "" type class_ref 867074 // TradeoffPreferencesInputMessage
@@ -623,6 +638,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
     end
 
@@ -643,6 +660,7 @@ ${members}};
       mysql_decl ""
       
       operation 148226 "GetProbabilisticOutcomes"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 867458 // ProbabilisticOutcomesOutputMessage
 	nparams 1
 	  param in name "" type class_ref 867330 // ProbabilisticOutcomesInputMessage
@@ -651,6 +669,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
     end
 
@@ -671,6 +691,7 @@ ${members}};
       mysql_decl ""
       
       operation 148354 "GetCapacityAssessment"
+	stereotype "niem-profile:webservice"
 	public return_type class_ref 860034 // CapacityAssessmentOutputMessage
 	nparams 1
 	  param in name "" type class_ref 860162 // CapacityAssessmentInputMessage
@@ -679,6 +700,8 @@ ${members}};
 	
 	
 	
+	ncouples 1
+	key "niem-profile:webservice:HTTPMethods" value "GET"
       end
     end
   end
