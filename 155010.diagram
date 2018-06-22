@@ -1,7 +1,16 @@
-format 212
+format 218
 
 classcanvas 128002 class_ref 860034 // CapacityAssessmentOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 255 302 2000
+  xyz 42 162 2000
+end
+classcanvas 128130 class_ref 1537666 // CapacityAssessment
+  classdiagramsettings member_max_width 0 end
+  xyz 474 35 2000
+end
+relationcanvas 128258 relation_ref 1454338 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 405.5 200 3000 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 451 212 3000 no_multiplicity_b
 end
 end
