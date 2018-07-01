@@ -1,7 +1,35 @@
-format 212
+format 218
 
 classcanvas 128002 class_ref 845698 // ProblemIdentificationInputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 344 300 2000
+  xyz 39 202 2000
+end
+classcanvas 128130 class_ref 1546626 // IssueDescriptionFromUser
+  classdiagramsettings member_max_width 0 end
+  xyz 82 40 2000
+end
+classcanvas 128386 class_ref 1546754 // LocationInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 113 348 2000
+end
+classcanvas 128642 class_ref 1546882 // UrgencyDescriptionFromUser
+  classdiagramsettings member_max_width 0 end
+  xyz 468 288 2000
+end
+relationcanvas 128258 relation_ref 1461890 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 178 180 3000 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 178 172 3000 no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 1462018 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 175.5 312.5 3000 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 175 315 3000 no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 1462146 // <directional aggregation>
+  decenter_end 462
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 372 310.5 3000 to ref 128642
+  no_role_a no_role_b
+  multiplicity_a_pos 421 361 3000 no_multiplicity_b
 end
 end

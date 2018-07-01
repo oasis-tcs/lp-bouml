@@ -1,11 +1,16 @@
-format 212
+format 218
 
 classcanvas 128002 class_ref 212610 // RegistrationLoginOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 398 244 2000
+  xyz 39 104 2000
 end
 classcanvas 128130 class_ref 845570 // LoginInformation
   classdiagramsettings member_max_width 0 end
-  xyz 73 290 2000
+  xyz 77 289 2000
+end
+relationcanvas 128258 relation_ref 1463682 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 170 233 3000 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 171 256 3000 no_multiplicity_b
 end
 end

@@ -1,7 +1,25 @@
-format 212
+format 218
 
 classcanvas 128002 class_ref 867202 // TradeoffPreferencesOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 182 153 2000
+  xyz 42 42 2000
+end
+classcanvas 130178 class_ref 1549954 // UserTradeoffPreferencesDetermined
+  classdiagramsettings member_max_width 0 end
+  xyz 541 29 2000
+end
+classcanvas 130306 class_ref 1550210 // Tradeoff
+  classdiagramsettings member_max_width 0 end
+  xyz 521 224 2000
+end
+relationcanvas 130434 relation_ref 1467394 // <directional aggregation>
+  from ref 130178 z 2001 stereotype "<<niem>>" xyz 685.5 163 3000 to ref 130306
+  no_role_a no_role_b
+  multiplicity_a_pos 710 191 3000 no_multiplicity_b
+end
+relationcanvas 130562 relation_ref 1467522 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 434 70.5 3000 to ref 130178
+  no_role_a no_role_b
+  multiplicity_a_pos 494 82 3000 no_multiplicity_b
 end
 end

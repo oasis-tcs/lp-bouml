@@ -1,6 +1,6 @@
 format 218
 "Messages" // UML::Messages
-  revision 11
+  revision 14
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -74,24 +74,6 @@ format 218
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      classrelation 1452290 // <directional aggregation>
-	relation 1452290 o-->
-	  stereotype "niem-profile:niem"
-	  a role_name "" private
-	    classrelation_ref 1452290 // <directional aggregation>
-	  b parent class_ref 1527810 // SolutionProviderCapacity
-	ncouples 9
-	key "niem-profile:niem:XPath" value ""
-	key "niem-profile:niem:Type" value ""
-	key "niem-profile:niem:Property" value ""
-	key "niem-profile:niem:BaseType" value ""
-	key "niem-profile:niem:Multiplicity" value ""
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value ""
-	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value ""
-      end
-
       classrelation 1452418 // <directional aggregation>
 	relation 1452418 o-->
 	  stereotype "niem-profile:niem"
@@ -514,6 +496,29 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:Notes" value ""
 	comment "If the portal or system does not have the capability of determining legal issues or if the user also has the ability to self-identify their legal issue, this data element will mark the legal issue as having been user identified. (Issue List discussion above.)"
       end
+
+      attribute 2977154 "IssueUniqueID"
+	private type class_ref 213762 // id
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
     end
 
     class 1528322 "IssueType"
@@ -643,6 +648,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
       key "niem-profile:niem:Notes" value ""
       classrelation 1452162 // <directional aggregation>
 	relation 1452162 o-->
+	  stereotype "niem-profile:niem"
 	  a role_name "" multiplicity "*" private
 	    comment "Flag indicating potential referrals will be accepted up to a certain quantity as it relates to Issue or Case Type.  Provider may have different capacity for different legal issues and this data element will indicate availability as it relates to particular case types.  This quantity will need to be maintained on a regular basis by the Provider's system. (Issue Types will be mapped to standardized lists, such as LSC or NSMI.  Any published & accessible list can be referenced in the message.) 
 
@@ -651,6 +657,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 "
 	    classrelation_ref 1452162 // <directional aggregation>
 	  b parent class_ref 1528066 // AvailableForReferralOfIssueType
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
     end
 
@@ -912,6 +928,24 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
 	comment "Service levels offered by Provider (Full representation, partial representation, referral of pro bono attorney, clinic, document assembly, etc.) "
+      end
+
+      classrelation 1464834 // <directional aggregation>
+	relation 1464834 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1464834 // <directional aggregation>
+	  b parent class_ref 1527810 // SolutionProviderCapacity
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
     end
 
@@ -1400,6 +1434,24 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
 	comment "All other metadata collected from the user session and interaction. "
+      end
+
+      classrelation 1465730 // <directional aggregation>
+	relation 1465730 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1465730 // <directional aggregation>
+	  b parent class_ref 1535618 // FinancialEligibilityPrediction
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
     end
 
@@ -2606,6 +2658,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
 	comment "If the user self-identifies as disabled, this flag will mark their disabled status. This can be determined based on user interaction or system assessment."
       end
 
@@ -2620,6 +2682,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
 	comment "This flag indicates that the user self-identifies or is system identified as being fluent in English. "
       end
 
@@ -2658,6 +2730,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
 	comment "Identifies the user as having access to a smart phone or a tablet.  This determination can be made through user interaction or using session data to identify how the visitor is accessing the portal."
       end
 
@@ -2672,6 +2754,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
 	comment "Identifies user has having a sufficient ability to read.  This can be determined through user interaction or session data.  "
       end
 
@@ -2686,6 +2778,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
 	comment "Identifies user as having a sufficient ability to write.  This can be determined through user interaction or session data.  "
       end
 
@@ -2700,6 +2802,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
 	comment "This flag will indicate that the user has indicated that they have been or currently are directly or indirectly involved in a legal case.  The determination of prior legal experience can be made through user interaction or session data, where user indirectly demonstrated prior legal experience."
       end
 
@@ -2714,6 +2826,16 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	idl_decl ""
 	mysql_decl ""
 	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
 	comment "This flag indicates that the user does not have access to a vehicle or someone that can provide transportation."
       end
 
@@ -3479,16 +3601,12 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1569154 "masterData"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1461250 // <directional aggregation>
+	relation 1461250 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1461250 // <directional aggregation>
+	  b parent class_ref 1536258 // MasterData
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3501,16 +3619,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1569282 "caseData"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1461378 // <directional aggregation>
+	relation 1461378 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1461378 // <directional aggregation>
+	  b parent class_ref 1545218 // HistoricCaseData
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3521,42 +3635,14 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	comment "case historical data including case type, claim type, judgment details, etc."
       end
 
-      attribute 1575810 "issueData"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-	ncouples 9
-	key "niem-profile:niem:XPath" value ""
-	key "niem-profile:niem:Type" value ""
-	key "niem-profile:niem:Property" value ""
-	key "niem-profile:niem:BaseType" value ""
-	key "niem-profile:niem:Multiplicity" value ""
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value ""
-	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value ""
-	comment "issue historical data"
-      end
-
-      attribute 1576066 "issueDescription"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1461506 // <directional aggregation>
+	relation 1461506 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1461506 // <directional aggregation>
+	  b parent class_ref 1545986 // HistoricalIssueData
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3590,8 +3676,521 @@ The Referral System's unique IDs for legal issues identified for individual user
     end
 
     classdiagram 162306 "ProbabilisticOutcomesInputMessage"
-      classdiagramsettings member_max_width 0 end
-      size A4
+      classdiagramsettings draw_all_relations no member_max_width 0 end
+      size A-Landscape
+    end
+
+    class 1545218 "HistoricCaseData"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2973826 "CaseStateJuridiction"
+	private type class_ref 1545346 // JurisdictionType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "State where historical data reporting court or legal aid organization is based.  "
+      end
+
+      attribute 2973954 "CaseLocalJurisdiction"
+	private type class_ref 1545346 // JurisdictionType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Locality (city, county, federal district, etc.) where historical data reporting court or legal aid organization is based."
+      end
+
+      attribute 2974082 "CourtType"
+	private type class_ref 1545474 // CourtType
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Level and jurisdiction of court reporting the historical data (i.e., justice court, general jurisdiction trial court, appellate court, etc..) "
+      end
+
+      attribute 2974210 "CaseType"
+	private type class_ref 1545602 // CaseType
+	multiplicity "1..*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Case types (i.e. Small Claims, Evictions, Divorce With Children, etc.) from historical data from case records (i.e., court or legal aid case management systems). (Case Types will be mapped to standardized data, such as NCSC's State Reporting Guidelines.) "
+      end
+
+      attribute 2974338 "ClaimType"
+	private type class_ref 1545730 // ClaimType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Claim types or causes of action (i.e., child custody, support or alimony, money judgment, etc.) from historical data from case records (i.e., court or legal aid case management systems).  Claim types should be associated with Case Types. (Claim Types will be mapped to standardized data, such as NCSC's State Reporting Guidelines.) "
+      end
+
+      attribute 2974466 "ClaimAmount"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Claim amounts associated with Claim Types from historical data from case records (i.e., court or legal aid case management systems). "
+      end
+
+      attribute 2974594 "JudgmentType"
+	private type class_ref 1545858 // JudgmentType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Types of judgment, associated with Claim Types, from historical data from case records (i.e., court or legal aid case management systems). (Judgment Types will be mapped to standardized data, such as NCSC's State Reporting Guidelines.)"
+      end
+
+      attribute 2974722 "JudgmentAmount"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Judgment Amount, associated with Judgment Types and Claim Amount, from historical data from case records (i.e., court or legal aid case management systems)."
+      end
+
+      attribute 2974850 "JudgmentSatisfactionRate"
+	private type class_ref 1517186 // decimal
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This metric tracks the percentage of time Judgment Amount is paid and satisfied, based on aggregate values from historical data from case records (i.e., court or legal aid case management systems)."
+      end
+
+      attribute 2974978 "PercentOfJudgementAmountPaid"
+	private type class_ref 1517186 // decimal
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This metric tracks the percent of the Judgment Amount awarded that was paid or satisfied, based on aggregate values from historical data from case records (i.e., court or legal aid case management systems)."
+      end
+    end
+
+    class 1545346 "JurisdictionType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1545474 "CourtType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1545602 "CaseType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1545730 "ClaimType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1545858 "JudgmentType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1545986 "HistoricalIssueData"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      comment "This category includes historical data for legal issues that never became legal cases filed with the court, and may include issues that were resolved with a simple letter or out of court. 	"
+      attribute 2975106 "IssueStateJurisdiction"
+	private type class_ref 1545346 // JurisdictionType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "State where historical data reporting Provider is based.  "
+      end
+
+      attribute 2975234 "IssueLocalJurisdiction"
+	private type class_ref 1545346 // JurisdictionType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Locality (city, county, federal district, etc.) where historical data reporting Provider is based."
+      end
+
+      attribute 2975362 "IssueType"
+	private type class_ref 1528322 // IssueType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Issue types (i.e. Unpaid loans, will creation, etc.) from historical data from Provider's case records. Issue Types will be mapped to standardized lists such as LSC or NSMI) "
+      end
+
+      attribute 2975490 "IssueClaimAmount"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Claim amounts associated with Issue Types from historical data from Provider's case records."
+      end
+
+      attribute 2975618 "IssueResolutionType"
+	private type class_ref 1546242 // IssueResolutionType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Types of resolution (i.e., settlement, vacated unit, etc.), associated with Issue Claim Types, from historical data from Provider's case records."
+      end
+
+      attribute 2975746 "IssueResolutionAmount"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Issue Resolution Amount, associated with Issue Resolution Types and Issue Claim Amount, from historical data from Provider's case records."
+      end
+    end
+
+    class 1546114 "IssueType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1546242 "IssueResolutionType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1546498 "PathwayType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
     end
   end
 
@@ -3611,6 +4210,18 @@ The Referral System's unique IDs for legal issues identified for individual user
     
     activitydiagramsettings
      end
+    class 1536002 "PathwayType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
     class 867458 "ProbabilisticOutcomesOutputMessage"
       visibility package stereotype "niem-profile:niem"
       cpp_decl ""
@@ -3631,17 +4242,12 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1575938 "pathwaySelected"
-	private type class_ref 1536002 // PathwayType
-	multiplicity "*"
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1461762 // <directional aggregation>
+	relation 1461762 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1461762 // <directional aggregation>
+	  b parent class_ref 1546370 // SolutionPathwaySelectedByUser
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3652,7 +4258,6 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	comment "The Probabilistic Outcomes module will help determine the course of action, or pathways, a user chooses to take.  The Assistance module helps the user select specific providers that can support the user through the selected pathways.  Examples of these pathways include: Retain a Lawyer, Self Help Using Online Services, etc."
       end
     end
 
@@ -3680,7 +4285,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       size A4
     end
 
-    class 1536002 "PathwayType"
+    class 1546370 "SolutionPathwaySelectedByUser"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -3690,6 +4295,29 @@ The Referral System's unique IDs for legal issues identified for individual user
       explicit_switch_type ""
       mysql_decl ""
       
+      attribute 2975874 "PathwaySelected"
+	private type class_ref 1536002 // PathwayType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The Probabilistic Outcomes module will help the user determine the best course of action, or pathway(s) (i.e., lawyer referral, online self-help, mediation, etc.) to take.  "
+      end
     end
   end
 
@@ -3729,16 +4357,12 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1545730 "issueDescription"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1461890 // <directional aggregation>
+	relation 1461890 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1461890 // <directional aggregation>
+	  b parent class_ref 1546626 // IssueDescriptionFromUser
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3751,27 +4375,30 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1545858 "locationInformation"
-	private explicit_type ""
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1462018 // <directional aggregation>
+	relation 1462018 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1462018 // <directional aggregation>
+	  b parent class_ref 1546754 // LocationInformation
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1562114 "urgencyDescription"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1462146 // <directional aggregation>
+	relation 1462146 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1462146 // <directional aggregation>
+	  b parent class_ref 1546882 // UrgencyDescriptionFromUser
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3807,6 +4434,254 @@ The Referral System's unique IDs for legal issues identified for individual user
     classdiagram 148098 "ProblemIdentificationInputMessage"
       classdiagramsettings member_max_width 0 end
       size A4
+    end
+
+    class 1546626 "IssueDescriptionFromUser"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2976002 "UserStatedIssue"
+	private explicit_type "string"
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Issues identified by user. These issues may or may not correspond to legal issues.  This input will help the Problem Identification module more accurately identify actual legal or related issues."
+      end
+
+      attribute 2976130 "UserStatedRelatedIssue"
+	private explicit_type "string"
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Users may identify related issues, which can impact the rights and remedies available at the present issue.  These issues may or may not correspond to legal issues. "
+      end
+
+      attribute 2976258 "UserStatedTimingOfIssue"
+	private explicit_type "string"
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Timing of issues can be critical in identifying problems (i.e., date rent was paid, contract date, etc.). "
+      end
+    end
+
+    class 1546754 "LocationInformation"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2976386 "LocationOfIssue"
+	private type class_ref 1535106 // AddressType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "User may identify locations where issues stemmed or are taking place.  Location(s) of Issues should be associated with User Stated Issues. This will help the Problem Identification module determine jurisdiction, available remedies, and identify service providers. "
+      end
+
+      attribute 2976514 "LocationOfUser"
+	private type class_ref 1535106 // AddressType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    class 1546882 "UrgencyDescriptionFromUser"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2976642 "UserStatedUrgencyType"
+	private type class_ref 1547010 // UrgencyType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Types of urgencies as identified by the user (i.e., eviction, physical danger, etc.) "
+      end
+
+      attribute 2976770 "UserStatedUrgencyDeadline"
+	private explicit_type "string"
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Users may identify specific deadlines or time frames concerning urgencies (i.e., eviction notice, victim notification, etc.). This message would indicate the days remaining to act.  This can be based on user interaction or system assessment. "
+      end
+
+      attribute 2976898 "UserStatedUrgencyLevel"
+	private type class_ref 1547138 // UrgencyLevelType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Users may have a subjective perspective on how urgent their issue is.  Urgency would need to be communicated in terms of levels (i.e., high, medium, low) or score (0 to 10)."
+      end
+    end
+
+    class 1547010 "UrgencyType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1547138 "UrgencyLevelType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
     end
   end
 
@@ -3846,62 +4721,12 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1553026 "legalProblem"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-	ncouples 9
-	key "niem-profile:niem:XPath" value ""
-	key "niem-profile:niem:Type" value ""
-	key "niem-profile:niem:Property" value ""
-	key "niem-profile:niem:BaseType" value ""
-	key "niem-profile:niem:Multiplicity" value ""
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value ""
-	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value ""
-	comment "Is it a legal problem?"
-      end
-
-      attribute 1545986 "issueIdentification"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-	ncouples 9
-	key "niem-profile:niem:XPath" value ""
-	key "niem-profile:niem:Type" value ""
-	key "niem-profile:niem:Property" value ""
-	key "niem-profile:niem:BaseType" value ""
-	key "niem-profile:niem:Multiplicity" value ""
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value ""
-	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value ""
-	comment "issue id#"
-      end
-
-      attribute 1552898 "issueDescription"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1462274 // LegalIssueIdentified (<directional aggregation>)
+	relation 1462274 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "LegalIssueIdentified" multiplicity "*" private
+	    classrelation_ref 1462274 // LegalIssueIdentified (<directional aggregation>)
+	  b multiplicity "*" parent class_ref 1535490 // IdentifiedIssue
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3914,16 +4739,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1546242 "urgencyDescription"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1462402 // <directional aggregation>
+	relation 1462402 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1462402 // <directional aggregation>
+	  b parent class_ref 1547266 // LegalProblem
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3936,16 +4757,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1546114 "urgencyAsseement"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1462530 // LegalIssueIdentifiedBySystem (<directional aggregation>)
+	relation 1462530 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "LegalIssueIdentifiedBySystem" multiplicity "*" private
+	    classrelation_ref 1462530 // LegalIssueIdentifiedBySystem (<directional aggregation>)
+	  b parent class_ref 1535490 // IdentifiedIssue
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -3958,16 +4775,102 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1546370 "jurisdiction"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1462658 // LegalIssueIdentifiedByUser (<directional aggregation>)
+	relation 1462658 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "LegalIssueIdentifiedByUser" multiplicity "*" private
+	    classrelation_ref 1462658 // LegalIssueIdentifiedByUser (<directional aggregation>)
+	  b parent class_ref 1535490 // IdentifiedIssue
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1462786 // NonLegelIssue (<directional aggregation>)
+	relation 1462786 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "NonLegelIssue" multiplicity "*" private
+	    classrelation_ref 1462786 // NonLegelIssue (<directional aggregation>)
+	  b parent class_ref 1535490 // IdentifiedIssue
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1463042 // <directional aggregation>
+	relation 1463042 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1463042 // <directional aggregation>
+	  b parent class_ref 1547522 // IssueDescription
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1463170 // <directional aggregation>
+	relation 1463170 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1463170 // <directional aggregation>
+	  b parent class_ref 1547650 // Jurisdiction
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1463426 // <directional aggregation>
+	relation 1463426 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1463426 // <directional aggregation>
+	  b parent class_ref 1547778 // UrgencyDescriptionFromSystem
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1474050 // <directional aggregation>
+	relation 1474050 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1474050 // <directional aggregation>
+	  b parent class_ref 1547906 // UrgencyAssessment
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4001,8 +4904,274 @@ The Referral System's unique IDs for legal issues identified for individual user
     end
 
     classdiagram 148226 "ProblemIdentificationOutputMessage"
-      classdiagramsettings member_max_width 0 end
-      size A4
+      classdiagramsettings draw_all_relations yes member_max_width 0 end
+      size B-Landscape
+    end
+
+    class 1547266 "LegalProblem"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2977026 "IssueIsALegalProblem"
+	private explicit_type "bool"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This message indicates that the issue(s) at hand are legal issues. "
+      end
+    end
+
+    class 1547522 "IssueDescription"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 1462914 // SystemDeterminedIssue (<directional aggregation>)
+	relation 1462914 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "SystemDeterminedIssue" multiplicity "*" private
+	    comment "Based on user description of their issues, the Problem Identification module can determine legal or non-legal issues at hand.   (Issue Types will be mapped to existing standardized lists, such as LSC or NSMI. For general non-legal issues, lists such as Open Referral can be used)."
+	    classrelation_ref 1462914 // SystemDeterminedIssue (<directional aggregation>)
+	  b parent class_ref 1535490 // IdentifiedIssue
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      attribute 2977282 "SystemDeterminedDeadline"
+	private type class_ref 887682 // date
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Based on System Determined Issue(s), User Stated Timing of Issue(s), and User Stated Urgency Deadlines, the system can determine important timeframes and deadlines.  There may be multiple deadlines for different issues. "
+      end
+    end
+
+    class 1547650 "Jurisdiction"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2977410 "StateJurisdiction"
+	private type class_ref 1498242 // JurisdictionType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "State(s) that may have jurisdiction over the legal issue(s).  State jurisdiction should be associated with System Determined Issue(s). There may be multiple states with jurisdiction for different legal issues.  "
+      end
+
+      attribute 2977538 "LocalJurisdiction"
+	private type class_ref 1498242 // JurisdictionType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Localities (city, county, federal district, administrative agency, etc.) that may have jurisdiction over the legal issue(s). Local jurisdiction should be associated with System Determined Issue(s). There may be multiple localities with jurisdiction for different legal issues. "
+      end
+
+      attribute 2977666 "JurisdictionCaseType"
+	private type class_ref 1545602 // CaseType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Jurisdiction of a court may be over particular case types (subject matter & dollar amount) that result from System Determined Issue(s).  This message specifies jurisdiction courts with case types.  Jurisdiction Case Type should be associated with System Determined Issue(s)."
+      end
+    end
+
+    class 1547778 "UrgencyDescriptionFromSystem"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2977794 "SystemDeterminedUrgencyType"
+	private type class_ref 1547010 // UrgencyType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Types of urgencies as identified by the Problem Identification Module (i.e., eviction, physical danger, etc.).  These urgencies may or not have been identified by the user."
+      end
+
+      attribute 2977922 "SystemDeterminedUrgencyDeadline"
+	private type class_ref 887682 // date
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Deadlines identified by the system based on the System Determined Urgency Types.  These deadlines may or may not be in lined with the User Stated Urgency Deadline(s)."
+      end
+    end
+
+    class 1547906 "UrgencyAssessment"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      attribute 2978050 "SystemDeterminedUrgencyLevel"
+	private type class_ref 1547138 // UrgencyLevelType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The Problem Identification module will formulate an urgency level based on the System Determined Issues, System Determined Urgency Types and Deadlines.  We need to discuss if the LP TC should standardize the output of this assessment as a level (high, medium, low) or a score (0 to 10)."
+      end
     end
   end
 
@@ -4085,73 +5254,6 @@ The Referral System's unique IDs for legal issues identified for individual user
     
     activitydiagramsettings
      end
-    class 212610 "RegistrationLoginOutputMessage"
-      visibility package stereotype "niem-profile:niem"
-      cpp_decl ""
-      java_decl ""
-      php_decl ""
-      python_2_2 python_decl ""
-      idl_decl ""
-      explicit_switch_type ""
-      mysql_decl ""
-      
-      ncouples 9
-      key "niem-profile:niem:XPath" value ""
-      key "niem-profile:niem:Type" value ""
-      key "niem-profile:niem:Property" value ""
-      key "niem-profile:niem:BaseType" value ""
-      key "niem-profile:niem:Multiplicity" value ""
-      key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:OldXPath" value ""
-      key "niem-profile:niem:OldMultiplicity" value ""
-      key "niem-profile:niem:Notes" value ""
-      attribute 1544706 "loginInformation"
-	private type class_ref 845570 // LoginInformation
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-	ncouples 9
-	key "niem-profile:niem:XPath" value ""
-	key "niem-profile:niem:Type" value ""
-	key "niem-profile:niem:Property" value ""
-	key "niem-profile:niem:BaseType" value ""
-	key "niem-profile:niem:Multiplicity" value ""
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value ""
-	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value ""
-      end
-    end
-
-    classinstance 134530 "RegistrationLoginOutputMessage"
-      stereotype "niem-profile:niem"
-      type class_ref 212610 // RegistrationLoginOutputMessage
-      attributes
-        end
-      relations
-        end
-      ncouples 9
-      key "niem-profile:niem:XPath" value ""
-      key "niem-profile:niem:Type" value ""
-      key "niem-profile:niem:Property" value ""
-      key "niem-profile:niem:BaseType" value ""
-      key "niem-profile:niem:Multiplicity" value ""
-      key "niem-profile:niem:CodeList" value ""
-      key "niem-profile:niem:OldXPath" value ""
-      key "niem-profile:niem:OldMultiplicity" value ""
-      key "niem-profile:niem:Notes" value ""
-    end
-
-    classdiagram 141314 "RegistrationLoginOutputMessage"
-      classdiagramsettings member_max_width 0 end
-      size A4
-    end
-
     class 845570 "LoginInformation"
       visibility package stereotype "niem-profile:niem"
       cpp_decl ""
@@ -4317,7 +5419,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       end
     end
 
-    class 1538050 "RoleType"
+    class 1538178 "OauthToken"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -4329,7 +5431,70 @@ The Referral System's unique IDs for legal issues identified for individual user
       
     end
 
-    class 1538178 "OauthToken"
+    class 212610 "RegistrationLoginOutputMessage"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      classrelation 1463682 // <directional aggregation>
+	relation 1463682 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1463682 // <directional aggregation>
+	  b parent class_ref 845570 // LoginInformation
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    classinstance 134530 "RegistrationLoginOutputMessage"
+      stereotype "niem-profile:niem"
+      type class_ref 212610 // RegistrationLoginOutputMessage
+      attributes
+        end
+      relations
+        end
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+    end
+
+    classdiagram 141314 "RegistrationLoginOutputMessage"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
+
+    class 1538050 "RoleType"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -4358,6 +5523,552 @@ The Referral System's unique IDs for legal issues identified for individual user
     
     activitydiagramsettings
      end
+    class 1548162 "AssistanceType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1549186 "Expense"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2979586 "ExpenseSource"
+	private explicit_type "string"
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the name of the entity, organization, or individual that the user pays expense types to. Expense Source should be associated with Expense Types, and there can be multiple Expense Sources for Expense Types. "
+      end
+
+      attribute 2979330 "ExpenseType"
+	private type class_ref 1548674 // ExpenseType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the types of expenses a user has.  There can be multiple expense types, such as rent, utilities, child support, etc.."
+      end
+    end
+
+    class 1548674 "ExpenseType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1548290 "FinancialInformation"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2979074 "NumberOfDependents"
+	private explicit_type "int"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the number of dependents the user has.  The criteria, such as age, that is factored into counting dependents is up to the source and receiving systems to calibrate."
+      end
+
+      attribute 2980226 "NetWorth"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the total sum of all Property Net Value associated with the user.  This value can be provided by the user or system determined."
+      end
+
+      attribute 2980354 "PublicAssistanceIsReceived"
+	private explicit_type "bool"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The user has indicated that they receive public assistance."
+      end
+
+      attribute 2980482 "PublicAssistanceType"
+	private type class_ref 1548930 // PublicAssistanceType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The user has indicated that these public assistance types are received.  "
+      end
+
+      classrelation 1465090 // <directional aggregation>
+	relation 1465090 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1465090 // <directional aggregation>
+	  b parent class_ref 1549058 // Income
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1465218 // <directional aggregation>
+	relation 1465218 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1465218 // <directional aggregation>
+	  b parent class_ref 1549186 // Expense
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1465346 // <directional aggregation>
+	relation 1465346 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1465346 // <directional aggregation>
+	  b parent class_ref 1549314 // Property
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+    end
+
+    class 1549058 "Income"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2979458 "IncomeSource"
+	private explicit_type "string"
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the name of the employer, entity, or individual provide the Income Type. Income Source should be associated with Income Type and there can be multiple Income Sources for Income Types."
+      end
+
+      attribute 2979202 "IncomeType"
+	private type class_ref 1548546 // IncomeType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the types of income a user has.  There can be multiple income types, such as wages, interest income, alimony, etc.."
+      end
+
+      attribute 2978946 "IncomeAmount"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag will indicate that the dollar amount provided is the income for the Income Period.  Whether the relevant income amount is net, gross, before or after taxes, etc., is up to the source and receiving systems to calibrate."
+      end
+
+      attribute 2978818 "IncomePeriod"
+	private type class_ref 1548418 // PaymentFrequencyType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "User can designate if the income information will be bi-weekly, monthly, annually, etc. "
+      end
+    end
+
+    class 1548546 "IncomeType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1548418 "PaymentFrequencyType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1549314 "Property"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2980098 "PropertyNetValue"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the net value of each Property Type Owned (i.e., Property Fair Market Value - Property Outstanding Debt = Property Net Value)."
+      end
+
+      attribute 2979970 "PropertyOutstandingDebt"
+	private type class_ref 212866 // amount
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the value of outstanding debt owed against each Property Type Owned.  There can be multiple Outstanding Debts against each Property Type Owned."
+      end
+
+      attribute 2979842 "PropertyFairMarketValue"
+	private type class_ref 212866 // amount
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the value of each Property Type declared by the user, i.e. rental property A is $100,000, rental property B is $200,000, etc. Property Value should be be associated with Property Type Owned."
+      end
+
+      attribute 2979714 "PropertyTypeOwned"
+	private type class_ref 1548802 // PropertyType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates the type of personal or real property the user owns, such as home, rental property, vehicles, etc.. There can be multiple Property Types and multiple values of each Property Type Owned by the user."
+      end
+    end
+
+    class 1548802 "PropertyType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1548930 "PublicAssistanceType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
     class 859778 "SolutionOptionsInputMessage"
       visibility package stereotype "niem-profile:niem"
       cpp_decl ""
@@ -4378,16 +6089,12 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1559554 "problemIdentification"
-	private type class_ref 845826 // ProblemIdentificationOutputMessage
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1463938 // <directional aggregation>
+	relation 1463938 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1463938 // <directional aggregation>
+	  b parent class_ref 845826 // ProblemIdentificationOutputMessage
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4400,16 +6107,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1560194 "capacityInformation"
-	private type class_ref 860034 // CapacityAssessmentOutputMessage
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1464066 // <directional aggregation>
+	relation 1464066 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1464066 // <directional aggregation>
+	  b parent class_ref 860034 // CapacityAssessmentOutputMessage
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4422,16 +6125,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1560322 "userPreferences"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1464194 // <directional aggregation>
+	relation 1464194 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1464194 // <directional aggregation>
+	  b parent class_ref 867202 // TradeoffPreferencesOutputMessage
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4444,16 +6143,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1560450 "existenceOfSolutionProvider"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1464322 // <directional aggregation>
+	relation 1464322 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1464322 // <directional aggregation>
+	  b parent class_ref 867458 // ProbabilisticOutcomesOutputMessage
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4466,16 +6161,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1560834 "userAuthorizationToShareData"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1464450 // <directional aggregation>
+	relation 1464450 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1464450 // <directional aggregation>
+	  b parent class_ref 1535746 // UserAuthorizationToShareData
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4488,16 +6179,48 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1560962 "financialInformation"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1464578 // <directional aggregation>
+	relation 1464578 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1464578 // <directional aggregation>
+	  b parent class_ref 1548290 // FinancialInformation
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1464706 // <directional aggregation>
+	relation 1464706 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1464706 // <directional aggregation>
+	  b parent class_ref 1548034 // UserPreferences
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1464962 // <directional aggregation>
+	relation 1464962 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1464962 // <directional aggregation>
+	  b parent class_ref 1534850 // SolutionProviderProfile
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4513,7 +6236,7 @@ The Referral System's unique IDs for legal issues identified for individual user
 
     classdiagram 154754 "SolutionOptionsInputMessage"
       classdiagramsettings member_max_width 0 end
-      size A4
+      size C-Landscape
     end
 
     classinstance 1666946 "SolutionOptionsInputMessage"
@@ -4533,6 +6256,82 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
+    end
+
+    class 1548034 "UserPreferences"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2978178 "UserAssistancePreferences"
+	private type class_ref 1548162 // AssistanceType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "UserRequiresInPersonAssistance:  This flag indicates that user only wants solution options that involve in person assistance.
+UserPrefersInPersonAssistance: This flag indicates that the user prefers in person assistance, but will perform some online tasks.
+UserPrefersManualOptions: This flag indicates that the user prefers to perform tasks manually rather than on a computer.
+UserPrefersOnlineAssositance: This flag indicates that the user prefers online services and tools over in person or telephonic support. 
+UserRequiresHumanTelephonicAssistance: This flag indicates that the user can perform some tasks independently, but will require human assistance due to preferences or disabilities.
+UserPrefersHumanTelephonicAssistance: This flag indicates that the user prefers human assistance, in person, over the phone, or the web.
+UserPrefersLanguageAssistance: This flag indicates that the user prefers assistance in another language.  (Language lists will be mapped to standardized lists)
+UserRequiresLanguageAssistance: This flag indicates that the user requires assistance in another language.  (Language lists will be mapped to standardized lists)"
+      end
+
+      attribute 2978690 "UserAssistanceLanguage"
+	private type class_ref 1537538 // LanguageType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates that the user prefers assistance in another language.  (Language lists will be mapped to standardized lists)"
+      end
     end
   end
 
@@ -4572,16 +6371,12 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1560578 "solutionSelected"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1465474 // <directional aggregation>
+	relation 1465474 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "*" private
+	    classrelation_ref 1465474 // <directional aggregation>
+	  b parent class_ref 1535362 // SelectedSolutionType
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4594,39 +6389,12 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1560706 "masterRecord"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-	ncouples 9
-	key "niem-profile:niem:XPath" value ""
-	key "niem-profile:niem:Type" value ""
-	key "niem-profile:niem:Property" value ""
-	key "niem-profile:niem:BaseType" value ""
-	key "niem-profile:niem:Multiplicity" value ""
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value ""
-	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value ""
-	comment "A collection of the output messages from previously completed modules"
-      end
-
-      attribute 1561090 "financialEligibilityPrediction"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1465602 // <directional aggregation>
+	relation 1465602 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1465602 // <directional aggregation>
+	  b parent class_ref 1536258 // MasterData
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4681,6 +6449,309 @@ The Referral System's unique IDs for legal issues identified for individual user
     
     activitydiagramsettings
      end
+    class 1549570 "Cost"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2981506 "AffordablityExpensePreference"
+	private explicit_type "int"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Get the user's preference on the cost they are willing or able to incur. This would be on a scale (small/medium/low or 0 to 10). "
+      end
+
+      attribute 2981634 "CostLimitations"
+	private type class_ref 212866 // amount
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "What is the maximum that the user is willing to spend? This would be a dollar amount. "
+      end
+    end
+
+    class 1549826 "DueProcess"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2981762 "USerPreferenceForComprehensiveLegalProcess"
+	private explicit_type "bool"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Get the user's preference for exercising their legal rights (i.e., enforce their rights in court versus getting to resolution faster or more cost effectively) "
+      end
+    end
+
+    class 1549442 "Time"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2980610 "PreferenceForSpeed"
+	private explicit_type "int"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Get the user's preference on how fast or slow they want this issue to be resolved. (Scale..)"
+      end
+
+      attribute 2980738 "SystemDetereminedUrgencyType"
+	private type class_ref 1547010 // UrgencyType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Types of urgencies as identified by the Problem Identification Module (i.e., eviction, physical danger, etc.).  These urgencies may or not have been identified by the user."
+      end
+
+      attribute 2980866 "SystemDeterminedUrgencyDeadline"
+	private type class_ref 1516930 // date
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Deadlines identified by the system based on the System Determined Urgency Types.  These deadlines may or may not be in lined with the User Stated Urgency Deadline(s)."
+      end
+
+      attribute 2980994 "SystemDeterminedUrgencyLevel"
+	private type class_ref 1547138 // UrgencyLevelType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "The Problem Identification module will formulate an urgency level based on the System Determined Issues, System Determined Urgency Types and Deadlines.  We need to discuss if the LP TC should standardize the output of this assessment as a level (high, medium, low) or a score (0 to 10)."
+      end
+
+      attribute 2981122 "UserStatedUrgencyType"
+	private type class_ref 1547010 // UrgencyType
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Types of urgencies as identified by the user (i.e., eviction, physical danger, etc.) "
+      end
+
+      attribute 2981250 "UserStatedUrgencyDeadline"
+	private type class_ref 1516930 // date
+	multiplicity "*"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Users may identify specific deadlines or time frames concerning urgencies (i.e., eviction notice, victim notification, etc.). This message would indicate the days remaining to act.  This can be based on user interaction or system assessment. "
+      end
+
+      attribute 2981378 "UserStatedUrgencyLevel"
+	private type class_ref 1547138 // UrgencyLevelType
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "Users may have a subjective perspective on how urgent their issue is.  Urgency would need to be communicated in terms of levels (i.e., high, medium, low) or score (0 to 10)."
+      end
+    end
+
     class 867074 "TradeoffPreferencesInputMessage"
       visibility package stereotype "niem-profile:niem"
       cpp_decl ""
@@ -4701,16 +6772,13 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1568770 "userTradeoffPreferences"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1466626 // UserPreferenceForPrediableOutcome (<directional aggregation>)
+	relation 1466626 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "UserPreferenceForPrediableOutcome" multiplicity "0..1" private
+	    comment "Get a user's preference for an option that gives you a predictable outcome (i.e.,.. )"
+	    classrelation_ref 1466626 // UserPreferenceForPrediableOutcome (<directional aggregation>)
+	  b parent class_ref 1545986 // HistoricalIssueData
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4721,7 +6789,98 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	comment "rank order or time, cost, process complexity, due process, predictability of outcome, enforceability"
+      end
+
+      classrelation 1466754 // UserPreferenceForEnforceableOutcome (<directional aggregation>)
+	relation 1466754 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "UserPreferenceForEnforceableOutcome" multiplicity "0..1" private
+	    comment "Get the user's preference for a pathway that ensures higher enforceability (i.e., go to court vs. go to ODR) "
+	    classrelation_ref 1466754 // UserPreferenceForEnforceableOutcome (<directional aggregation>)
+	  b parent class_ref 1545218 // HistoricCaseData
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1466882 // <directional aggregation>
+	relation 1466882 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1466882 // <directional aggregation>
+	  b parent class_ref 1549442 // Time
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1467010 // <directional aggregation>
+	relation 1467010 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1467010 // <directional aggregation>
+	  b parent class_ref 1549570 // Cost
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1467138 // <directional aggregation>
+	relation 1467138 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1467138 // <directional aggregation>
+	  b parent class_ref 1549826 // DueProcess
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1467266 // UserPreferenceForSimplerProcess (<directional aggregation>)
+	relation 1467266 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "UserPreferenceForSimplerProcess" multiplicity "0..1" private
+	    comment "Get the user's preference for how easy or difficult a process they can manage. (System can determine a corresponding option based on the number of steps involved in the different available pathways. If preference for simplicity is high, go to ODR, if preference for simplicity is low, go to court.) "
+	    classrelation_ref 1467266 // UserPreferenceForSimplerProcess (<directional aggregation>)
+	  b parent class_ref 1537666 // CapacityAssessment
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
       end
     end
 
@@ -4746,7 +6905,7 @@ The Referral System's unique IDs for legal issues identified for individual user
 
     classdiagram 162050 "TradeoffPreferencesInputMessage"
       classdiagramsettings member_max_width 0 end
-      size A4
+      size A3-Landscape
     end
   end
 
@@ -4766,6 +6925,104 @@ The Referral System's unique IDs for legal issues identified for individual user
     
     activitydiagramsettings
      end
+    class 1550210 "Tradeoff"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      attribute 2981890 "SystemDeterminedRankOrderOfPreference"
+	private explicit_type "int"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This message is generated by the system and ranks in order of importance: 1) time, 2) cost, 3) process complexity, 4) due process, 5) predictability of outcome, and 6) enforceability based on user interaction and session data."
+      end
+
+      attribute 2982018 "SystemDeterminedScoreOfPreferences"
+	private explicit_type "int"
+	multiplicity "0..1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "This message is generated by the system and provides a score (i.e. 1 to 10 or 1 to 100) for each of the following: 1) time, 2) cost, 3) process complexity, 4) due process, 5) predictability of outcome, and 6) enforceability based on user interaction and session data."
+      end
+
+      attribute 2982146 "Tradeoff"
+	private type class_ref 1550082 // TradeoffType
+	multiplicity "1"
+	stereotype "niem-profile:niem"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+	comment "time
+cost
+process complexity
+due process
+predictability of outcome
+enforceability "
+      end
+    end
+
     class 867202 "TradeoffPreferencesOutputMessage"
       visibility package stereotype "niem-profile:niem"
       cpp_decl ""
@@ -4786,16 +7043,30 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1568898 "userTradeoffPreferences"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1465858 // <directional aggregation>
+	relation 1465858 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1465858 // <directional aggregation>
+	  b parent class_ref 1549442 // Time
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1467522 // <directional aggregation>
+	relation 1467522 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1467522 // <directional aggregation>
+	  b parent class_ref 1549954 // UserTradeoffPreferencesDetermined
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4818,8 +7089,59 @@ The Referral System's unique IDs for legal issues identified for individual user
     end
 
     classdiagram 162178 "TradeoffPreferencesOutputMessage"
-      classdiagramsettings member_max_width 0 end
-      size A4
+      classdiagramsettings draw_all_relations no member_max_width 0 end
+      size B-Landscape
+    end
+
+    class 1550082 "TradeoffType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 1549954 "UserTradeoffPreferencesDetermined"
+      visibility package stereotype "niem-profile:niem"
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 9
+      key "niem-profile:niem:XPath" value ""
+      key "niem-profile:niem:Type" value ""
+      key "niem-profile:niem:Property" value ""
+      key "niem-profile:niem:BaseType" value ""
+      key "niem-profile:niem:Multiplicity" value ""
+      key "niem-profile:niem:CodeList" value ""
+      key "niem-profile:niem:OldXPath" value ""
+      key "niem-profile:niem:OldMultiplicity" value ""
+      key "niem-profile:niem:Notes" value ""
+      classrelation 1467394 // <directional aggregation>
+	relation 1467394 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "6" private
+	    classrelation_ref 1467394 // <directional aggregation>
+	  b parent class_ref 1550210 // Tradeoff
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
     end
   end
 end

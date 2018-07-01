@@ -1,7 +1,7 @@
-format 212
+format 218
 
 classcanvas 128002 class_ref 860546 // RegistrationLoginInputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 245 294 2000
+  xyz 40 114 2000
 end
 end
