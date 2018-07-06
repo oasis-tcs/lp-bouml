@@ -31,14 +31,14 @@ end
 relationcanvas 128258 relation_ref 1466626 // <directional aggregation>
   decenter_begin 975
   decenter_end 59
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 485.5 778 3000 to ref 128130
-  role_a_pos 258 849 3000 no_role_b
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 485 778 3000 to ref 128130
+  role_a_pos 241 849 3000 no_role_b
   multiplicity_a_pos 579 893 3000 no_multiplicity_b
 end
 relationcanvas 128514 relation_ref 1466754 // <directional aggregation>
   decenter_begin 123
   decenter_end 135
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 61.5 735 3000 to ref 128386
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 61 735 3000 to ref 128386
   role_a_pos 103 755 3000 no_role_b
   multiplicity_a_pos 47 755 3000 no_multiplicity_b
 end
@@ -57,9 +57,9 @@ end
 relationcanvas 129794 relation_ref 1467138 // <directional aggregation>
   decenter_begin 275
   decenter_end 536
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 178 521 3000 to ref 129666
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 177 521 3000 to ref 129666
   no_role_a no_role_b
-  multiplicity_a_pos 216 448 3000 no_multiplicity_b
+  multiplicity_a_pos 214 448 3000 no_multiplicity_b
 end
 relationcanvas 130050 relation_ref 1467266 // <directional aggregation>
   geometry VH

@@ -1,6 +1,6 @@
 format 218
 "Messages" // UML::Messages
-  revision 14
+  revision 15
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -3473,28 +3473,6 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 1545090 "returnToSource"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
-	ncouples 9
-	key "niem-profile:niem:XPath" value ""
-	key "niem-profile:niem:Type" value ""
-	key "niem-profile:niem:Property" value ""
-	key "niem-profile:niem:BaseType" value ""
-	key "niem-profile:niem:Multiplicity" value ""
-	key "niem-profile:niem:CodeList" value ""
-	key "niem-profile:niem:OldXPath" value ""
-	key "niem-profile:niem:OldMultiplicity" value ""
-	key "niem-profile:niem:Notes" value ""
-      end
-
       attribute 1545218 "acknowledgementAcceptance"
 	private explicit_type ""
 	stereotype "niem-profile:niem"
@@ -3517,16 +3495,30 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      attribute 1545346 "outcome"
-	private explicit_type ""
-	stereotype "niem-profile:niem"
-	cpp_decl ""
-	java_decl ""
-	php_decl ""
-	python_decl ""
-	idl_decl ""
-	mysql_decl ""
-	MysqlColumn
+      classrelation 1480578 // <directional aggregation>
+	relation 1480578 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1480578 // <directional aggregation>
+	  b parent class_ref 1537794 // ReturnToReferralSystem
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
+
+      classrelation 1480706 // <directional aggregation>
+	relation 1480706 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1480706 // <directional aggregation>
+	  b parent class_ref 1537922 // Outcome
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
 	key "niem-profile:niem:Type" value ""
@@ -4793,11 +4785,11 @@ The Referral System's unique IDs for legal issues identified for individual user
 	key "niem-profile:niem:Notes" value ""
       end
 
-      classrelation 1462786 // NonLegelIssue (<directional aggregation>)
+      classrelation 1462786 // NonLegalIssue (<directional aggregation>)
 	relation 1462786 o-->
 	  stereotype "niem-profile:niem"
-	  a role_name "NonLegelIssue" multiplicity "*" private
-	    classrelation_ref 1462786 // NonLegelIssue (<directional aggregation>)
+	  a role_name "NonLegalIssue" multiplicity "*" private
+	    classrelation_ref 1462786 // NonLegalIssue (<directional aggregation>)
 	  b parent class_ref 1535490 // IdentifiedIssue
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""
@@ -5211,6 +5203,23 @@ The Referral System's unique IDs for legal issues identified for individual user
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
+      classrelation 1480834 // <directional aggregation>
+	relation 1480834 o-->
+	  stereotype "niem-profile:niem"
+	  a role_name "" multiplicity "0..1" private
+	    classrelation_ref 1480834 // <directional aggregation>
+	  b parent class_ref 845570 // LoginInformation
+	ncouples 9
+	key "niem-profile:niem:XPath" value ""
+	key "niem-profile:niem:Type" value ""
+	key "niem-profile:niem:Property" value ""
+	key "niem-profile:niem:BaseType" value ""
+	key "niem-profile:niem:Multiplicity" value ""
+	key "niem-profile:niem:CodeList" value ""
+	key "niem-profile:niem:OldXPath" value ""
+	key "niem-profile:niem:OldMultiplicity" value ""
+	key "niem-profile:niem:Notes" value ""
+      end
     end
 
     classinstance 1667714 "RegistrationLoginInputMessage"
@@ -6538,7 +6547,7 @@ UserRequiresLanguageAssistance: This flag indicates that the user requires assis
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      attribute 2981762 "USerPreferenceForComprehensiveLegalProcess"
+      attribute 2981762 "UserPreferenceForComprehensiveLegalProcess"
 	private explicit_type "bool"
 	multiplicity "0..1"
 	stereotype "niem-profile:niem"
@@ -6772,12 +6781,12 @@ UserRequiresLanguageAssistance: This flag indicates that the user requires assis
       key "niem-profile:niem:OldXPath" value ""
       key "niem-profile:niem:OldMultiplicity" value ""
       key "niem-profile:niem:Notes" value ""
-      classrelation 1466626 // UserPreferenceForPrediableOutcome (<directional aggregation>)
+      classrelation 1466626 // UserPreferenceForPredictableOutcome (<directional aggregation>)
 	relation 1466626 o-->
 	  stereotype "niem-profile:niem"
-	  a role_name "UserPreferenceForPrediableOutcome" multiplicity "0..1" private
+	  a role_name "UserPreferenceForPredictableOutcome" multiplicity "0..1" private
 	    comment "Get a user's preference for an option that gives you a predictable outcome (i.e.,.. )"
-	    classrelation_ref 1466626 // UserPreferenceForPrediableOutcome (<directional aggregation>)
+	    classrelation_ref 1466626 // UserPreferenceForPredictableOutcome (<directional aggregation>)
 	  b parent class_ref 1545986 // HistoricalIssueData
 	ncouples 9
 	key "niem-profile:niem:XPath" value ""

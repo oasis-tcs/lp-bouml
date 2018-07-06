@@ -1,15 +1,18 @@
-window_sizes 1913 1862 461 1446 1348 445
+window_sizes 2736 1699 461 2269 1185 445
 cleanlooks_style
-selected classdiagram_ref 155266 // AssistanceInputMessage
+selected sequencediagram_ref 141186 // Sequence1
 open
-  classview_ref 218114 // AssistanceInputMessage
-  classview_ref 210946 // ProblemIdentificationInputMessage
+  classview_ref 179330 // Interfaces and Operations
+  class_ref 1528066 // AvailableForReferralOfIssueType
+  class_ref 1535618 // FinancialEligibilityPrediction
+  classview_ref 210690 // DescriptionNavigationInputMessage
+  class_ref 845442 // DescriptionNavigationOutputMessage
   classview_ref 211074 // ProblemIdentificationOutputMessage
   classview_ref 204162 // RegistrationLoginInputMessage
   classview_ref 179586 // RegistrationLoginOutputMessage
   classview_ref 217602 // SolutionOptionsInputMessage
   classview_ref 217730 // SolutionOptionsOutputMessage
-  classview_ref 224770 // TradeoffPreferencesInputMessage
+  class_ref 1549826 // DueProcess
   classview_ref 224898 // TradeoffPreferencesOutputMessage
   classview_ref 179842 // Common Types
   classview_ref 172802 // Stereotypes
