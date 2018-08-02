@@ -1,6 +1,6 @@
 format 218
 "Messages" // UML::Messages
-  revision 15
+  revision 16
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -1280,7 +1280,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
       end
 
       attribute 2960130 "UserAddress"
-	private type class_ref 1365378 // AddressType
+	private explicit_type "AddressType"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -1536,7 +1536,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
       end
 
       attribute 2959234 "ProviderLocationReferred"
-	private type class_ref 1365378 // AddressType
+	private explicit_type "AddressType"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -3875,7 +3875,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       end
 
       attribute 2974850 "JudgmentSatisfactionRate"
-	private type class_ref 1517186 // decimal
+	private explicit_type "decimal"
 	multiplicity "0..1"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -3899,7 +3899,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       end
 
       attribute 2974978 "PercentOfJudgementAmountPaid"
-	private type class_ref 1517186 // decimal
+	private explicit_type "decimal"
 	multiplicity "0..1"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -4965,7 +4965,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       end
 
       attribute 2977282 "SystemDeterminedDeadline"
-	private type class_ref 887682 // date
+	private explicit_type "date"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -5000,7 +5000,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       mysql_decl ""
       
       attribute 2977410 "StateJurisdiction"
-	private type class_ref 1498242 // JurisdictionType
+	private explicit_type "JurisdictionType"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -5024,7 +5024,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       end
 
       attribute 2977538 "LocalJurisdiction"
-	private type class_ref 1498242 // JurisdictionType
+	private explicit_type "JurisdictionType"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -5107,7 +5107,7 @@ The Referral System's unique IDs for legal issues identified for individual user
       end
 
       attribute 2977922 "SystemDeterminedUrgencyDeadline"
-	private type class_ref 887682 // date
+	private explicit_type "date"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -6641,7 +6641,7 @@ UserRequiresLanguageAssistance: This flag indicates that the user requires assis
       end
 
       attribute 2980866 "SystemDeterminedUrgencyDeadline"
-	private type class_ref 1516930 // date
+	private explicit_type "date"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""
@@ -6713,7 +6713,7 @@ UserRequiresLanguageAssistance: This flag indicates that the user requires assis
       end
 
       attribute 2981250 "UserStatedUrgencyDeadline"
-	private type class_ref 1516930 // date
+	private explicit_type "date"
 	multiplicity "*"
 	stereotype "niem-profile:niem"
 	cpp_decl ""

@@ -1,20 +1,10 @@
-window_sizes 2736 1699 461 2269 1185 445
+window_sizes 2732 1684 461 2265 1170 445
 cleanlooks_style
-selected sequencediagram_ref 141186 // Sequence1
+selected 
+  package_ref 188930 // NIEMReference
 open
-  classview_ref 179330 // Interfaces and Operations
-  class_ref 1528066 // AvailableForReferralOfIssueType
-  class_ref 1535618 // FinancialEligibilityPrediction
-  classview_ref 210690 // DescriptionNavigationInputMessage
-  class_ref 845442 // DescriptionNavigationOutputMessage
-  classview_ref 211074 // ProblemIdentificationOutputMessage
-  classview_ref 204162 // RegistrationLoginInputMessage
-  classview_ref 179586 // RegistrationLoginOutputMessage
-  classview_ref 217602 // SolutionOptionsInputMessage
-  classview_ref 217730 // SolutionOptionsOutputMessage
-  class_ref 1549826 // DueProcess
-  classview_ref 224898 // TradeoffPreferencesOutputMessage
-  classview_ref 179842 // Common Types
+  
+  package_ref 154242 // NIEM
   classview_ref 172802 // Stereotypes
 end
 end
