@@ -1,0 +1,343 @@
+format 218
+"NIEMSubset" // NIEM::NIEMSubset
+  revision 1
+  modified_by 2 "JamesECabral"
+  // class settings
+  
+  classdiagramsettings member_max_width 0 end
+  
+  usecasediagramsettings end
+  
+  sequencediagramsettings end
+  
+  collaborationdiagramsettings end
+  
+  objectdiagramsettings end
+  
+  componentdiagramsettings
+   end
+  
+  deploymentdiagramsettings
+   end
+  
+  statediagramsettings
+   end
+  
+  activitydiagramsettings
+   end
+  
+  classview 288002 "local"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    ncouples 2
+    key "URI" value "local"
+    key "prefix" value "local"
+    class 2217218 "abstract"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "local,abstract"
+    end
+  end
+
+  classview 288130 "structures"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    ncouples 2
+    key "URI" value "http://release.niem.gov/niem/structures/4.0/"
+    key "prefix" value "structures"
+    class 2217346 "AugmentationType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,AugmentationType"
+    end
+
+    class 2217474 "ObjectType"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,ObjectType"
+    end
+
+    class 2217602 "@SimpleObjectAttributeGroup"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,@SimpleObjectAttributeGroup"
+      attribute 4358274 "structures:@id"
+	private type class_ref 2217730 // ID
+	multiplicity "0,1"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 1
+	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@id"
+      end
+
+      attribute 4358402 "structures:@ref"
+	private type class_ref 2217858 // IDREF
+	multiplicity "0,1"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 1
+	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@ref"
+      end
+
+      attribute 4358530 "structures:@uri"
+	private type class_ref 2217986 // anyURI
+	multiplicity "0,1"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 1
+	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@uri"
+      end
+
+      attribute 4358658 "structures:@metadata"
+	private type class_ref 2218114 // IDREFS
+	multiplicity "0,1"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 1
+	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@metadata"
+      end
+
+      attribute 4358786 "structures:@relationshipMetadata"
+	private type class_ref 2218114 // IDREFS
+	multiplicity "0,1"
+	cpp_decl ""
+	java_decl ""
+	php_decl ""
+	python_decl ""
+	idl_decl ""
+	mysql_decl ""
+	MysqlColumn
+	ncouples 1
+	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@relationshipMetadata"
+      end
+    end
+
+    classinstance 4827138 "@id"
+      type class_ref 2217730 // ID
+      attributes
+        end
+      relations
+        end
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,@id"
+    end
+
+    classinstance 4827266 "@ref"
+      type class_ref 2217858 // IDREF
+      attributes
+        end
+      relations
+        end
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,@ref"
+    end
+
+    classinstance 4827394 "@uri"
+      type class_ref 2217986 // anyURI
+      attributes
+        end
+      relations
+        end
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,@uri"
+    end
+
+    classinstance 4827522 "@metadata"
+      type class_ref 2218114 // IDREFS
+      attributes
+        end
+      relations
+        end
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,@metadata"
+    end
+
+    classinstance 4827650 "@relationshipMetadata"
+      type class_ref 2218114 // IDREFS
+      attributes
+        end
+      relations
+        end
+      ncouples 1
+      key "URI" value "http://release.niem.gov/niem/structures/4.0/,@relationshipMetadata"
+    end
+  end
+
+  classview 288258 "xs"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    ncouples 2
+    key "URI" value "http://www.w3.org/2001/XMLSchema"
+    key "prefix" value "xs"
+    class 2217730 "ID"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://www.w3.org/2001/XMLSchema,ID"
+    end
+
+    class 2217858 "IDREF"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://www.w3.org/2001/XMLSchema,IDREF"
+    end
+
+    class 2217986 "anyURI"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://www.w3.org/2001/XMLSchema,anyURI"
+    end
+
+    class 2218114 "IDREFS"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://www.w3.org/2001/XMLSchema,IDREFS"
+    end
+
+    classinstance 4827778 "any"
+      type class_ref 2217218 // abstract
+      attributes
+        end
+      relations
+        end
+      ncouples 1
+      key "URI" value "http://www.w3.org/2001/XMLSchema,any"
+    end
+
+    class 2218242 "NCName"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      ncouples 1
+      key "URI" value "http://www.w3.org/2001/XMLSchema,NCName"
+    end
+  end
+end

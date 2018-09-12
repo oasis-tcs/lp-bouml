@@ -1,10 +1,14 @@
-window_sizes 2732 1684 461 2265 1170 445
+window_sizes 1916 2020 607 1303 1506 445
 cleanlooks_style
-selected 
-  package_ref 188930 // NIEMReference
+selected class_ref 1535490 // IdentifiedIssue
 open
-  
-  package_ref 154242 // NIEM
+  class_ref 1535490 // IdentifiedIssue
+  class_ref 1527810 // SolutionProviderCapacity
+  class_ref 845698 // ProblemIdentificationInputMessage
+  class_ref 1546626 // IssueDescriptionFromUser
+  class_ref 845826 // ProblemIdentificationOutputMessage
+  class_ref 1547266 // LegalProblem
+  class_ref 1547522 // IssueDescription
   classview_ref 172802 // Stereotypes
 end
 end

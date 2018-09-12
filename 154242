@@ -1,6 +1,6 @@
 format 218
 "NIEM" // NIEM
-  revision 6
+  revision 7
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -26,9 +26,9 @@ format 218
   activitydiagramsettings
    end
   
-  package_ref 188674 // NIEMSubset
-
-  package_ref 188802 // NIEMExtension
-
   package_ref 188930 // NIEMReference
+
+  package_ref 195458 // NIEMSubset
+
+  package_ref 195586 // NIEMExtension
 end

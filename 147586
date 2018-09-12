@@ -1,6 +1,6 @@
 format 218
 "Messages" // UML::Messages
-  revision 16
+  revision 17
   modified_by 2 "JamesECabral"
   // class settings
   
@@ -735,7 +735,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
-	comment "Categories of services offered by the Provider.  (Categories will be mapped to standardized lists, such as Open Referral. Refer to Issue Type List discussion)"
+	comment "Categories of services offered by the Provider.  (Categories will be mapped to standardized lists, such as NSMI or LSC. Refer to Issue Type List discussion)"
       end
 
       attribute 2956546 "ProviderDescription"
@@ -1038,6 +1038,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
+	comment "This flag allows users to restrict data sharing authorization only to solution providers falling within certain categories. "
       end
     end
   end
@@ -2302,6 +2303,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates that the user needs and can be supported with ASL-oriented services. "
       end
     end
 
@@ -2525,6 +2527,9 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates access to a printer, so solutions requiring a printer can be made available. 
+
+"
       end
 
       attribute 2964098 "UserHasAccessToScannerCamera"
@@ -2548,6 +2553,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates access to scanner or a camera so users can provide digital documentation. "
       end
 
       attribute 2964226 "USerHasAccessToVideoConferencing"
@@ -2571,6 +2577,7 @@ Available for @@@@ Issue Type When Capacity Assessment is %%%%%
 	key "niem-profile:niem:OldXPath" value ""
 	key "niem-profile:niem:OldMultiplicity" value ""
 	key "niem-profile:niem:Notes" value ""
+	comment "This flag indicates access to remote conferencing capabilities, allowing users to access services that can be provided via video conferencing. "
       end
     end
 
