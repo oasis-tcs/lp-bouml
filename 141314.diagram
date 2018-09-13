@@ -2,15 +2,26 @@ format 218
 
 classcanvas 128002 class_ref 212610 // RegistrationLoginOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 39 104 2000
+  xyz 13.1871 17.0966 2000
 end
 classcanvas 128130 class_ref 845570 // LoginInformation
   classdiagramsettings member_max_width 0 end
-  xyz 77 289 2000
+  xyz 39.7136 102.572 2000
+end
+classcanvas 128386 class_ref 2224770 // OAuthInfoPacket
+  classdiagramsettings member_max_width 0 end
+  xyz 244.209 107.99 2000
 end
 relationcanvas 128258 relation_ref 1463682 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 170 233 3000 to ref 128130
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 139 95 3000 to ref 128130
   no_role_a no_role_b
-  multiplicity_a_pos 171 256 3000 no_multiplicity_b
+  multiplicity_a_pos 90 92 3000 no_multiplicity_b
 end
+relationcanvas 128642 relation_ref 2257666 // <directional aggregation>
+  decenter_begin 952
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 203 89.5 3000 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 233 119 3000 no_multiplicity_b
+end
+preferred_whz 619 445 1.70881
 end

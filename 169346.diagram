@@ -1,0 +1,70 @@
+format 218
+
+classcanvas 128002 class_ref 2225666 // UserProfileOutputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 21 21.5 2000
+end
+classcanvas 128130 class_ref 1536258 // MasterData
+  classdiagramsettings member_max_width 0 end
+  xyz 28 118.5 2000
+end
+classcanvas 128386 class_ref 1548034 // UserPreferences
+  classdiagramsettings member_max_width 0 end
+  xyz 281 13 2000
+end
+classcanvas 128514 class_ref 1548290 // FinancialInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 298.5 107 2000
+end
+classcanvas 128642 class_ref 1549058 // Income
+  classdiagramsettings member_max_width 0 end
+  xyz 285 265 3005
+end
+classcanvas 128898 class_ref 1549186 // Expense
+  classdiagramsettings member_max_width 0 end
+  xyz 380 266.5 3005
+end
+classcanvas 129154 class_ref 1549314 // Property
+  classdiagramsettings member_max_width 0 end
+  xyz 481.5 265 2006
+end
+classcanvas 129666 class_ref 1536514 // ImmigrationStatus
+  classdiagramsettings member_max_width 0 end
+  xyz 233 413 2000
+end
+relationcanvas 128258 relation_ref 2258818 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 76 98 3000 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 72 99 3000 no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 1465090 // <directional aggregation>
+  from ref 128514 z 3006 stereotype "<<niem>>" xyz 325 241 3006 to ref 128642
+  no_role_a no_role_b
+  multiplicity_a_pos 328 246 3000 no_multiplicity_b
+end
+relationcanvas 129026 relation_ref 1465218 // <directional aggregation>
+  from ref 128514 z 3006 stereotype "<<niem>>" xyz 377 241 3006 to ref 128898
+  no_role_a no_role_b
+  multiplicity_a_pos 392 247 3000 no_multiplicity_b
+end
+relationcanvas 129282 relation_ref 1465346 // <directional aggregation>
+  from ref 128514 z 2007 stereotype "<<niem>>" xyz 436 241 2007 to ref 129154
+  no_role_a no_role_b
+  multiplicity_a_pos 470 279 3000 no_multiplicity_b
+end
+relationcanvas 129410 relation_ref 2258946 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 207 50 3000 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 252 59 3000 no_multiplicity_b
+end
+relationcanvas 129538 relation_ref 2259074 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 209 103 3000 to ref 128514
+  no_role_a no_role_b
+  multiplicity_a_pos 269 142 3000 no_multiplicity_b
+end
+relationcanvas 130178 relation_ref 2261122 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 174 244 3000 to ref 129666
+  no_role_a no_role_b
+  multiplicity_a_pos 248 394 3000 no_multiplicity_b
+end
+end

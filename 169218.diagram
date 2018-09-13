@@ -1,0 +1,90 @@
+format 218
+
+classcanvas 128002 class_ref 2225538 // ProviderProfileOutputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 27.8 11.7 2000
+end
+classcanvas 128130 class_ref 1534850 // ProviderProfile
+  classdiagramsettings member_max_width 0 end
+  xyz 21.8 104.8 2000
+end
+classcanvas 128386 class_ref 1527810 // ProviderCapacity
+  classdiagramsettings member_max_width 0 end
+  xyz 22.7 339.7 3005
+end
+classcanvas 128642 class_ref 1528066 // AvailableForReferralOfIssueType
+  classdiagramsettings member_max_width 0 end
+  xyz 157.3 271.2 3011
+end
+classcanvas 130178 class_ref 1537666 // CapacityAssessment
+  classdiagramsettings member_max_width 0 end
+  xyz 406 204 2005
+end
+classcanvas 130434 class_ref 1548290 // FinancialInformation
+  classdiagramsettings member_max_width 0 end
+  xyz 244 111 2000
+end
+classcanvas 130562 class_ref 1549058 // Income
+  classdiagramsettings member_max_width 0 end
+  xyz 283 -7.5 3005
+end
+classcanvas 130818 class_ref 1549186 // Expense
+  classdiagramsettings member_max_width 0 end
+  xyz 445.5 119.5 3005
+end
+classcanvas 131074 class_ref 1549314 // Property
+  classdiagramsettings member_max_width 0 end
+  xyz 439.5 2.5 2010
+end
+note 131458 "User Financial Information are not the same as Provider Financial Eligibility Criteria"
+  xyzwh 153 75 2005 78 137
+relationcanvas 128258 relation_ref 2258690 // <directional aggregation>
+  decenter_begin 280
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 55.5 85 3000 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 64 85 3000 no_multiplicity_b
+end
+relationcanvas 128514 relation_ref 1464834 // <directional aggregation>
+  decenter_begin 458
+  from ref 128130 z 3006 stereotype "<<niem>>" xyz 112.5 261 3006 to ref 128386
+  no_role_a no_role_b
+  multiplicity_a_pos 50 320 3000 no_multiplicity_b
+end
+relationcanvas 128770 relation_ref 1452162 // <directional aggregation>
+  decenter_end 591
+  from ref 128386 z 3012 stereotype "<<niem>>" xyz 161 317 3012 to ref 128642
+  no_role_a no_role_b
+  multiplicity_a_pos 142 352 3000 no_multiplicity_b
+end
+relationcanvas 130306 relation_ref 2259842 // <directional aggregation>
+  decenter_begin 71
+  decenter_end 303
+  from ref 128642 z 3012 stereotype "<<niem>>" xyz 352 277 3000 to ref 130178
+  role_a_pos 277 253 3000 no_role_b
+  multiplicity_a_pos 377 278 3000 no_multiplicity_b
+end
+relationcanvas 130690 relation_ref 1465090 // <directional aggregation>
+  from ref 130434 z 3006 stereotype "<<niem>>" xyz 227 160 3006 to ref 130562
+  no_role_a no_role_b
+  multiplicity_a_pos 306 114 3000 no_multiplicity_b
+end
+relationcanvas 130946 relation_ref 1465218 // <directional aggregation>
+  from ref 130434 z 3006 stereotype "<<niem>>" xyz 395 162 3006 to ref 130818
+  no_role_a no_role_b
+  multiplicity_a_pos 430 168 3000 no_multiplicity_b
+end
+relationcanvas 131202 relation_ref 1465346 // <directional aggregation>
+  from ref 130434 z 2011 stereotype "<<niem>>" xyz 391 109 2011 to ref 131074
+  no_role_a no_role_b
+  multiplicity_a_pos 428 97 3000 no_multiplicity_b
+end
+relationcanvas 131330 relation_ref 2259970 // <directional aggregation>
+  decenter_begin 518
+  decenter_end 194
+  from ref 128642 z 3012 stereotype "<<niem>>" xyz 240 247 3000 to ref 130434
+  role_a_pos 280 232 3000 no_role_b
+  multiplicity_a_pos 242 232 3000 no_multiplicity_b
+end
+line 131586 -_-_
+  from ref 131458 z 2006 to ref 130434
+end

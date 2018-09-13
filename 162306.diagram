@@ -2,34 +2,34 @@ format 218
 
 classcanvas 128130 class_ref 867330 // ProbabilisticOutcomesInputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 424 41 2000
-end
-classcanvas 128258 class_ref 1536258 // MasterData
-  classdiagramsettings member_max_width 0 end
-  xyz 464 273 2000
+  xyz 8 30 2000
 end
 classcanvas 128386 class_ref 1545218 // HistoricCaseData
   classdiagramsettings member_max_width 0 end
-  xyz 42 41 2000
+  xyz 40.5 142 2000
 end
 classcanvas 128514 class_ref 1545986 // HistoricalIssueData
   classdiagramsettings member_max_width 0 end
-  xyz 855 92 2000
+  xyz 311.5 145 2000
 end
-relationcanvas 128770 relation_ref 1461250 // <directional aggregation>
-  decenter_end 513
-  from ref 128130 z 2001 stereotype "<<niem>>" xyz 559 194.5 3000 to ref 128258
-  no_role_a no_role_b
-  multiplicity_a_pos 554 240 3000 no_multiplicity_b
+classcanvas 129154 class_ref 2225666 // UserProfileOutputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 354.5 38 2005
 end
 relationcanvas 128898 relation_ref 1461378 // <directional aggregation>
-  from ref 128130 z 2001 stereotype "<<niem>>" xyz 371.5 130.5 3000 to ref 128386
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 171 139.5 3000 to ref 128386
   no_role_a no_role_b
-  multiplicity_a_pos 376 154 3000 no_multiplicity_b
+  multiplicity_a_pos 105 123 3000 no_multiplicity_b
 end
 relationcanvas 129026 relation_ref 1461506 // <directional aggregation>
-  from ref 128130 z 2001 stereotype "<<niem>>" xyz 750.5 135 3000 to ref 128514
+  decenter_begin 953
+  from ref 128130 z 2001 stereotype "<<niem>>" xyz 265 138.5 3000 to ref 128514
   no_role_a no_role_b
-  multiplicity_a_pos 836 168 3000 no_multiplicity_b
+  multiplicity_a_pos 296 181 3000 no_multiplicity_b
+end
+relationcanvas 129282 relation_ref 2260226 // <directional aggregation>
+  from ref 128130 z 2006 stereotype "<<niem>>" xyz 265 61 3000 to ref 129154
+  no_role_a no_role_b
+  multiplicity_a_pos 325 70 3000 no_multiplicity_b
 end
 end

@@ -2,122 +2,71 @@ format 218
 
 classcanvas 128002 class_ref 859778 // SolutionOptionsInputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 338.188 783.229 2000
+  xyz 59.488 101.429 2000
 end
 classcanvas 128386 class_ref 845826 // ProblemIdentificationOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 733.104 725.479 2000
+  xyz 341.804 136.379 2000
 end
 classcanvas 128642 class_ref 860034 // CapacityAssessmentOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 303.188 897.125 2000
+  xyz 336.788 283.525 2000
 end
 classcanvas 128898 class_ref 867202 // TradeoffPreferencesOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 201.312 69 2000
+  xyz 336.212 348.4 2000
 end
 classcanvas 129154 class_ref 867458 // ProbabilisticOutcomesOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 730.917 839.375 2000
+  xyz 342.217 222.375 2000
 end
-classcanvas 129410 class_ref 1535746 // UserAuthorizationToShareData
+classcanvas 132610 class_ref 2225538 // ProviderProfileOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 508.083 408.75 2000
+  xyz 347.4 71.2 3005
 end
-classcanvas 129666 class_ref 1548034 // UserPreferences
+classcanvas 132866 class_ref 2225666 // UserProfileOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 39.9583 650.708 2000
-end
-classcanvas 129794 class_ref 1548290 // FinancialInformation
-  classdiagramsettings member_max_width 0 end
-  xyz 1099.92 522.042 2000
-end
-classcanvas 130178 class_ref 1534850 // SolutionProviderProfile
-  classdiagramsettings member_max_width 0 end
-  xyz 621.833 40.2292 3005
-end
-classcanvas 130818 class_ref 1549058 // Income
-  classdiagramsettings member_max_width 0 end
-  xyz 1501.98 520.042 2000
-end
-classcanvas 130946 class_ref 1549186 // Expense
-  classdiagramsettings member_max_width 0 end
-  xyz 1160.52 819.854 2000
-end
-classcanvas 131074 class_ref 1549314 // Property
-  classdiagramsettings member_max_width 0 end
-  xyz 1111.92 243.958 2000
+  xyz 350.4 7.6 2000
 end
 relationcanvas 128514 relation_ref 1463938 // <directional aggregation>
-  decenter_begin 115
-  decenter_end 818
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 647 789 3000 to ref 128386
+  decenter_begin 532
+  decenter_end 361
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 310 148 3000 to ref 128386
   no_role_a no_role_b
-  multiplicity_a_pos 686 799 3000 no_multiplicity_b
+  multiplicity_a_pos 312 175 3000 no_multiplicity_b
 end
 relationcanvas 128770 relation_ref 1464066 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 450 876 3000 to ref 128642
+  decenter_begin 878
+  decenter_end 41
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 317 227 3000 to ref 128642
   no_role_a no_role_b
-  multiplicity_a_pos 451 864 3000 no_multiplicity_b
+  multiplicity_a_pos 316 298 3000 no_multiplicity_b
 end
 relationcanvas 129026 relation_ref 1464194 // <directional aggregation>
-  decenter_begin 172
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 345 473 3000 to ref 128898
+  decenter_begin 796
+  decenter_end 43
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 299 222 3000 to ref 128898
   no_role_a no_role_b
-  multiplicity_a_pos 345 177 3000 no_multiplicity_b
+  multiplicity_a_pos 312 329 3000 no_multiplicity_b
 end
 relationcanvas 129282 relation_ref 1464322 // <directional aggregation>
-  decenter_begin 883
-  decenter_end 207
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 645 852 3000 to ref 129154
+  decenter_begin 948
+  decenter_end 37
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 262 188 3000 to ref 129154
   no_role_a no_role_b
-  multiplicity_a_pos 683 866 3000 no_multiplicity_b
+  multiplicity_a_pos 322 233 3000 no_multiplicity_b
 end
-relationcanvas 129538 relation_ref 1464450 // <directional aggregation>
-  geometry VH unfixed
-  decenter_begin 412
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 422 631 3000 to point 467 480
-  line 131842 z 2001 to ref 129410
+relationcanvas 132738 relation_ref 2259202 // <directional aggregation>
+  decenter_begin 300
+  from ref 128002 z 3006 stereotype "<<niem>>" xyz 265 110 3000 to ref 132610
   no_role_a no_role_b
-  multiplicity_a_pos 461 494 3000 no_multiplicity_b
+  multiplicity_a_pos 318 112 3000 no_multiplicity_b
 end
-relationcanvas 129922 relation_ref 1464578 // <directional aggregation>
-  geometry VH unfixed
-  decenter_begin 532
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 532 693.5 3000 to point 505 606
-  line 130562 z 2001 to ref 129794
+relationcanvas 132994 relation_ref 2259330 // <directional aggregation>
+  decenter_begin 819
+  decenter_end 52
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 254 59 3000 to ref 132866
   no_role_a no_role_b
-  multiplicity_a_pos 1052 620 3000 no_multiplicity_b
-end
-relationcanvas 130050 relation_ref 1464706 // <directional aggregation>
-  geometry VH unfixed
-  decenter_begin 50
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 307 741.5 3000 to point 351 702
-  line 130690 z 2001 to ref 129666
-  no_role_a no_role_b
-  multiplicity_a_pos 325 716 3000 no_multiplicity_b
-end
-relationcanvas 130306 relation_ref 1464962 // <directional aggregation>
-  geometry VH unfixed
-  decenter_begin 291
-  from ref 128002 z 3006 stereotype "<<niem>>" xyz 383 493 3000 to point 428 203
-  line 131586 z 3006 to ref 130178
-  no_role_a no_role_b
-  multiplicity_a_pos 602 217 3000 no_multiplicity_b
-end
-relationcanvas 131202 relation_ref 1465090 // <directional aggregation>
-  from ref 129794 z 2001 stereotype "<<niem>>" xyz 1393 603.5 3000 to ref 130818
-  no_role_a no_role_b
-  multiplicity_a_pos 1482 619 3000 no_multiplicity_b
-end
-relationcanvas 131330 relation_ref 1465218 // <directional aggregation>
-  from ref 129794 z 2001 stereotype "<<niem>>" xyz 1192.5 756.5 3000 to ref 130946
-  no_role_a no_role_b
-  multiplicity_a_pos 1222 786 3000 no_multiplicity_b
-end
-relationcanvas 131458 relation_ref 1465346 // <directional aggregation>
-  from ref 129794 z 2001 stereotype "<<niem>>" xyz 1185.5 468 3000 to ref 131074
-  no_role_a no_role_b
-  multiplicity_a_pos 1218 429 3000 no_multiplicity_b
+  multiplicity_a_pos 321 10 3000 no_multiplicity_b
 end
 end

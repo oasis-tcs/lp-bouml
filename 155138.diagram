@@ -2,71 +2,70 @@ format 218
 
 classcanvas 128002 class_ref 860162 // CapacityAssessmentInputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 575 495 2000
-end
-classcanvas 128130 class_ref 1536514 // ImmigrationStatus
-  classdiagramsettings member_max_width 0 end
-  xyz 1031 487 2000
+  xyz 324.6 171.2 2000
 end
 classcanvas 128386 class_ref 1536642 // Disability
   classdiagramsettings member_max_width 0 end
-  xyz 809 113 2000
+  xyz 343.8 8.6 2000
 end
 classcanvas 128642 class_ref 1536770 // LanguageProficiency
   classdiagramsettings member_max_width 0 end
-  xyz 524 656 2000
+  xyz 332 313.8 2000
 end
 classcanvas 128898 class_ref 1536898 // ComputerLiteracy
   classdiagramsettings member_max_width 0 end
-  xyz 801 327 2000
+  xyz 82 334.6 2000
 end
 classcanvas 129154 class_ref 1537026 // TechnologyAvailability
   classdiagramsettings member_max_width 0 end
-  xyz 39 330 2000
+  xyz 21 157.8 2000
 end
 classcanvas 129410 class_ref 1537154 // Literacy
   classdiagramsettings member_max_width 0 end
-  xyz 493 39 2000
+  xyz 99.8 23 2000
 end
-relationcanvas 128258 relation_ref 1453570 // <directional composition>
-  decenter_begin 852
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 941.5 598.5 3000 to ref 128130
-  no_role_a no_role_b
-  multiplicity_a_pos 1008 611 3000 no_multiplicity_b
+classcanvas 130178 class_ref 2225666 // UserProfileOutputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 526.1 83.3 2000
 end
+note 130434 "We need to validate the content of this message and the need for the entire module"
+  xyzwh 553 177 2000 138 99
 relationcanvas 128514 relation_ref 1453698 // <directional aggregation>
-  geometry VH unfixed
-  decenter_begin 389
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 673 347 3000 to point 717 198
-  line 129794 z 2001 to ref 128386
+  decenter_begin 513
+  decenter_end 628
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 374 145 3000 to ref 128386
   no_role_a no_role_b
-  multiplicity_a_pos 790 212 3000 no_multiplicity_b
+  multiplicity_a_pos 423 121 3000 no_multiplicity_b
 end
 relationcanvas 128770 relation_ref 1453826 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 714 636 3000 to ref 128642
+  decenter_begin 629
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 506 301 3000 to ref 128642
   no_role_a no_role_b
-  multiplicity_a_pos 742 623 3000 no_multiplicity_b
+  multiplicity_a_pos 443 303 3000 no_multiplicity_b
 end
 relationcanvas 129026 relation_ref 1453954 // <directional aggregation>
-  geometry VH unfixed
-  decenter_end 527
-  from ref 128002 z 2001 to point 758 389
-  line 129666 z 2001 stereotype "<<niem>>" xyz 734 391 3000 to ref 128898
+  decenter_end 957
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 474.5 204 3000 to ref 128898
   no_role_a no_role_b
-  multiplicity_a_pos 778 403 3000 no_multiplicity_b
+  multiplicity_a_pos 283 337 3000 no_multiplicity_b
 end
 relationcanvas 129282 relation_ref 1454082 // <directional aggregation>
   geometry VH unfixed
-  decenter_begin 45
-  from ref 128002 z 2001 to point 589 454
-  line 129922 z 2001 stereotype "<<niem>>" xyz 517.5 455.5 3000 to ref 129154
+  decenter_begin 820
+  from ref 128002 z 2001 to point 493 236
+  line 129922 z 2001 stereotype "<<niem>>" xyz 363.5 301 3000 to ref 129154
   no_role_a no_role_b
-  multiplicity_a_pos 547 468 3000 no_multiplicity_b
+  multiplicity_a_pos 287 241 3000 no_multiplicity_b
 end
 relationcanvas 129538 relation_ref 1454210 // <directional aggregation>
-  decenter_begin 152
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 584.5 327.5 3000 to ref 129410
+  decenter_begin 41
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 282.5 156.5 3000 to ref 129410
   no_role_a no_role_b
-  multiplicity_a_pos 609 173 3000 no_multiplicity_b
+  multiplicity_a_pos 234 110 3000 no_multiplicity_b
+end
+relationcanvas 130306 relation_ref 2261250 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 501 154 3000 to ref 130178
+  no_role_a no_role_b
+  multiplicity_a_pos 531 137 3000 no_multiplicity_b
 end
 end

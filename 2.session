@@ -1,14 +1,17 @@
-window_sizes 1916 2020 607 1303 1506 445
+window_sizes 1368 849 393 969 665 132
 cleanlooks_style
-selected class_ref 1535490 // IdentifiedIssue
+diagrams
+  active  classdiagram_ref 155138 // CapacityAssessmentInputMessage
+    969 665 130 B-Landscape 3 0
+  classdiagram_ref 155010 // CapacityAssessmentOutputMessage
+    112 90 139 A-Landscape 0 0
+  classdiagram_ref 169346 // UserProfileOutputMessage
+    112 90 100 A4 0 0
+end
+selected classview_ref 217986 // CapacityAssessmentInputMessage
 open
-  class_ref 1535490 // IdentifiedIssue
-  class_ref 1527810 // SolutionProviderCapacity
-  class_ref 845698 // ProblemIdentificationInputMessage
-  class_ref 1546626 // IssueDescriptionFromUser
-  class_ref 845826 // ProblemIdentificationOutputMessage
-  class_ref 1547266 // LegalProblem
-  class_ref 1547522 // IssueDescription
+  classview_ref 295042 // ProviderProfileOutputMessage
+  class_ref 2225666 // UserProfileOutputMessage
   classview_ref 172802 // Stereotypes
 end
 end

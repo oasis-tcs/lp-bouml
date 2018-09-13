@@ -2,34 +2,34 @@ format 218
 
 classcanvas 128002 class_ref 845698 // ProblemIdentificationInputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 39 202 2000
+  xyz 32.8 142 2000
 end
 classcanvas 128130 class_ref 1546626 // IssueDescriptionFromUser
   classdiagramsettings member_max_width 0 end
-  xyz 82 40 2000
+  xyz 54.2 18.4 2000
 end
 classcanvas 128386 class_ref 1546754 // LocationInformation
   classdiagramsettings member_max_width 0 end
-  xyz 113 348 2000
+  xyz 77.4 240.6 2000
 end
 classcanvas 128642 class_ref 1546882 // UrgencyDescriptionFromUser
   classdiagramsettings member_max_width 0 end
-  xyz 468 288 2000
+  xyz 320.6 135 2000
 end
 relationcanvas 128258 relation_ref 1461890 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 178 180 3000 to ref 128130
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 162.5 138.5 3000 to ref 128130
   no_role_a no_role_b
-  multiplicity_a_pos 178 172 3000 no_multiplicity_b
+  multiplicity_a_pos 106 105 3000 no_multiplicity_b
 end
 relationcanvas 128514 relation_ref 1462018 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 175.5 312.5 3000 to ref 128386
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 154.5 228 3000 to ref 128386
   no_role_a no_role_b
-  multiplicity_a_pos 175 315 3000 no_multiplicity_b
+  multiplicity_a_pos 109 221 3000 no_multiplicity_b
 end
 relationcanvas 128770 relation_ref 1462146 // <directional aggregation>
   decenter_end 462
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 372 310.5 3000 to ref 128642
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 294.5 192 3000 to ref 128642
   no_role_a no_role_b
-  multiplicity_a_pos 421 361 3000 no_multiplicity_b
+  multiplicity_a_pos 291 179 3000 no_multiplicity_b
 end
 end

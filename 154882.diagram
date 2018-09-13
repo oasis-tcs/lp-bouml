@@ -2,34 +2,24 @@ format 218
 
 classcanvas 128002 class_ref 859906 // SolutionOptionsOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 34 571 2000
+  xyz 5.4 19 2000
 end
 classcanvas 128130 class_ref 1535362 // SelectedSolutionType
   classdiagramsettings member_max_width 0 end
-  xyz 60 235 2000
+  xyz 31.4 103.2 2000
 end
-classcanvas 128386 class_ref 1536258 // MasterData
+classcanvas 128642 class_ref 1535618 // EligibilityPrediction
   classdiagramsettings member_max_width 0 end
-  xyz 490 410 2000
-end
-classcanvas 128642 class_ref 1535618 // FinancialEligibilityPrediction
-  classdiagramsettings member_max_width 0 end
-  xyz 440 57 2000
+  xyz 24.8 207.4 2000
 end
 relationcanvas 128258 relation_ref 1465474 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 169 461.5 3000 to ref 128130
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 136 53 3000 to ref 128130
   no_role_a no_role_b
-  multiplicity_a_pos 172 369 3000 no_multiplicity_b
+  multiplicity_a_pos 88 90 3000 no_multiplicity_b
 end
-relationcanvas 128514 relation_ref 1465602 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 383 599 3000 to ref 128386
+relationcanvas 129026 relation_ref 2260098 // <directional aggregation>
+  from ref 128130 z 2001 to ref 128642
   no_role_a no_role_b
-  multiplicity_a_pos 443 615 3000 no_multiplicity_b
-end
-relationcanvas 128770 relation_ref 1465730 // <directional aggregation>
-  decenter_begin 513
-  from ref 128386 z 2001 stereotype "<<niem>>" xyz 580.5 307 3000 to ref 128642
-  no_role_a no_role_b
-  multiplicity_a_pos 582 217 3000 no_multiplicity_b
+  multiplicity_a_pos 75 195 3000 no_multiplicity_b
 end
 end

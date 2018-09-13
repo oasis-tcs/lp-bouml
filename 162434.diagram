@@ -2,15 +2,15 @@ format 218
 
 classcanvas 128002 class_ref 867458 // ProbabilisticOutcomesOutputMessage
   classdiagramsettings member_max_width 0 end
-  xyz 39 42 2000
+  xyz 35.5 20 2000
 end
 classcanvas 128130 class_ref 1546370 // SolutionPathwaySelectedByUser
   classdiagramsettings member_max_width 0 end
-  xyz 76 197 2000
+  xyz 54.5 117.5 2000
 end
 relationcanvas 128258 relation_ref 1461762 // <directional aggregation>
-  from ref 128002 z 2001 stereotype "<<niem>>" xyz 212 145 3000 to ref 128130
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 199.5 94 3000 to ref 128130
   no_role_a no_role_b
-  multiplicity_a_pos 226 164 3000 no_multiplicity_b
+  multiplicity_a_pos 134 98 3000 no_multiplicity_b
 end
 end

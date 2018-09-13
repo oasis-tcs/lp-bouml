@@ -1,0 +1,25 @@
+format 218
+
+classcanvas 128002 class_ref 2225026 // JurisdictionOutputMessage
+  classdiagramsettings member_max_width 0 end
+  xyz 22.8 59.6 2000
+end
+classcanvas 128130 class_ref 1547650 // Jurisdiction
+  classdiagramsettings member_max_width 0 end
+  xyz 309.8 189.7 2000
+end
+classcanvas 128386 class_ref 1535490 // IdentifiedIssue
+  classdiagramsettings member_max_width 0 end
+  xyz 296.8 6.1 2000
+end
+relationcanvas 128514 relation_ref 2258434 // <directional aggregation>
+  from ref 128002 z 2001 stereotype "<<niem>>" xyz 216 78 3000 to ref 128386
+  role_a_pos 197 62 3000 no_role_b
+  multiplicity_a_pos 288 85 3000 no_multiplicity_b
+end
+relationcanvas 128642 relation_ref 2258562 // <directional aggregation>
+  from ref 128386 z 2001 stereotype "<<niem>>" xyz 341.5 168.5 3000 to ref 128130
+  no_role_a no_role_b
+  multiplicity_a_pos 341 176 3000 no_multiplicity_b
+end
+end
