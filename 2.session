@@ -1,17 +1,8 @@
-window_sizes 1368 849 393 969 665 132
+window_sizes 2565 1526 393 2166 1325 132
 cleanlooks_style
-diagrams
-  active  classdiagram_ref 155138 // CapacityAssessmentInputMessage
-    969 665 130 B-Landscape 3 0
-  classdiagram_ref 155010 // CapacityAssessmentOutputMessage
-    112 90 139 A-Landscape 0 0
-  classdiagram_ref 169346 // UserProfileOutputMessage
-    112 90 100 A4 0 0
-end
-selected classview_ref 217986 // CapacityAssessmentInputMessage
+selected 
+  package_ref 134530 // niem-profile
 open
-  classview_ref 295042 // ProviderProfileOutputMessage
-  class_ref 2225666 // UserProfileOutputMessage
   classview_ref 172802 // Stereotypes
 end
 end

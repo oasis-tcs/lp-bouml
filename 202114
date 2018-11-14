@@ -1,10 +1,12 @@
-format 218
+format 220
 "NIEMSubset" // NIEM::NIEMSubset
   revision 1
   modified_by 2 "JamesECabral"
   // class settings
   
   classdiagramsettings member_max_width 0 end
+  
+  classcompositediagramsettings end
   
   usecasediagramsettings end
   
@@ -13,6 +15,8 @@ format 218
   collaborationdiagramsettings end
   
   objectdiagramsettings end
+  
+  objectcompositediagramsettings end
   
   componentdiagramsettings
    end
@@ -26,13 +30,17 @@ format 218
   activitydiagramsettings
    end
   
-  classview 288002 "local"
+  classview 301698 "local"
     
     classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
     
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -45,7 +53,7 @@ format 218
     ncouples 2
     key "URI" value "local"
     key "prefix" value "local"
-    class 2217218 "abstract"
+    class 2232194 "abstract"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -60,13 +68,17 @@ format 218
     end
   end
 
-  classview 288130 "structures"
+  classview 301826 "structures"
     
     classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
     
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -79,7 +91,7 @@ format 218
     ncouples 2
     key "URI" value "http://release.niem.gov/niem/structures/4.0/"
     key "prefix" value "structures"
-    class 2217346 "AugmentationType"
+    class 2232322 "AugmentationType"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -93,7 +105,7 @@ format 218
       key "URI" value "http://release.niem.gov/niem/structures/4.0/,AugmentationType"
     end
 
-    class 2217474 "ObjectType"
+    class 2232450 "ObjectType"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -107,7 +119,7 @@ format 218
       key "URI" value "http://release.niem.gov/niem/structures/4.0/,ObjectType"
     end
 
-    class 2217602 "@SimpleObjectAttributeGroup"
+    class 2232578 "@SimpleObjectAttributeGroup"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -119,8 +131,8 @@ format 218
       
       ncouples 1
       key "URI" value "http://release.niem.gov/niem/structures/4.0/,@SimpleObjectAttributeGroup"
-      attribute 4358274 "structures:@id"
-	private type class_ref 2217730 // ID
+      attribute 4373378 "structures:@id"
+	private type class_ref 2232706 // ID
 	multiplicity "0,1"
 	cpp_decl ""
 	java_decl ""
@@ -133,8 +145,8 @@ format 218
 	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@id"
       end
 
-      attribute 4358402 "structures:@ref"
-	private type class_ref 2217858 // IDREF
+      attribute 4373506 "structures:@ref"
+	private type class_ref 2232834 // IDREF
 	multiplicity "0,1"
 	cpp_decl ""
 	java_decl ""
@@ -147,8 +159,8 @@ format 218
 	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@ref"
       end
 
-      attribute 4358530 "structures:@uri"
-	private type class_ref 2217986 // anyURI
+      attribute 4373634 "structures:@uri"
+	private type class_ref 2232962 // anyURI
 	multiplicity "0,1"
 	cpp_decl ""
 	java_decl ""
@@ -161,8 +173,8 @@ format 218
 	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@uri"
       end
 
-      attribute 4358658 "structures:@metadata"
-	private type class_ref 2218114 // IDREFS
+      attribute 4373762 "structures:@metadata"
+	private type class_ref 2233090 // IDREFS
 	multiplicity "0,1"
 	cpp_decl ""
 	java_decl ""
@@ -175,8 +187,8 @@ format 218
 	key "URI" value "http://release.niem.gov/niem/structures/4.0/,@metadata"
       end
 
-      attribute 4358786 "structures:@relationshipMetadata"
-	private type class_ref 2218114 // IDREFS
+      attribute 4373890 "structures:@relationshipMetadata"
+	private type class_ref 2233090 // IDREFS
 	multiplicity "0,1"
 	cpp_decl ""
 	java_decl ""
@@ -190,8 +202,8 @@ format 218
       end
     end
 
-    classinstance 4827138 "@id"
-      type class_ref 2217730 // ID
+    classinstance 4834306 "@id"
+      type class_ref 2232706 // ID
       attributes
         end
       relations
@@ -200,8 +212,8 @@ format 218
       key "URI" value "http://release.niem.gov/niem/structures/4.0/,@id"
     end
 
-    classinstance 4827266 "@ref"
-      type class_ref 2217858 // IDREF
+    classinstance 4834434 "@ref"
+      type class_ref 2232834 // IDREF
       attributes
         end
       relations
@@ -210,8 +222,8 @@ format 218
       key "URI" value "http://release.niem.gov/niem/structures/4.0/,@ref"
     end
 
-    classinstance 4827394 "@uri"
-      type class_ref 2217986 // anyURI
+    classinstance 4834562 "@uri"
+      type class_ref 2232962 // anyURI
       attributes
         end
       relations
@@ -220,8 +232,8 @@ format 218
       key "URI" value "http://release.niem.gov/niem/structures/4.0/,@uri"
     end
 
-    classinstance 4827522 "@metadata"
-      type class_ref 2218114 // IDREFS
+    classinstance 4834690 "@metadata"
+      type class_ref 2233090 // IDREFS
       attributes
         end
       relations
@@ -230,8 +242,8 @@ format 218
       key "URI" value "http://release.niem.gov/niem/structures/4.0/,@metadata"
     end
 
-    classinstance 4827650 "@relationshipMetadata"
-      type class_ref 2218114 // IDREFS
+    classinstance 4834818 "@relationshipMetadata"
+      type class_ref 2233090 // IDREFS
       attributes
         end
       relations
@@ -241,13 +253,17 @@ format 218
     end
   end
 
-  classview 288258 "xs"
+  classview 301954 "xs"
     
     classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
     
     collaborationdiagramsettings end
     
     objectdiagramsettings end
+    
+    objectcompositediagramsettings end
     
     sequencediagramsettings end
     
@@ -260,7 +276,7 @@ format 218
     ncouples 2
     key "URI" value "http://www.w3.org/2001/XMLSchema"
     key "prefix" value "xs"
-    class 2217730 "ID"
+    class 2232706 "ID"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -274,7 +290,7 @@ format 218
       key "URI" value "http://www.w3.org/2001/XMLSchema,ID"
     end
 
-    class 2217858 "IDREF"
+    class 2232834 "IDREF"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -288,7 +304,7 @@ format 218
       key "URI" value "http://www.w3.org/2001/XMLSchema,IDREF"
     end
 
-    class 2217986 "anyURI"
+    class 2232962 "anyURI"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -302,7 +318,7 @@ format 218
       key "URI" value "http://www.w3.org/2001/XMLSchema,anyURI"
     end
 
-    class 2218114 "IDREFS"
+    class 2233090 "IDREFS"
       visibility package 
       cpp_decl ""
       java_decl ""
@@ -316,8 +332,8 @@ format 218
       key "URI" value "http://www.w3.org/2001/XMLSchema,IDREFS"
     end
 
-    classinstance 4827778 "any"
-      type class_ref 2217218 // abstract
+    classinstance 4834946 "any"
+      type class_ref 2232194 // abstract
       attributes
         end
       relations
@@ -326,7 +342,7 @@ format 218
       key "URI" value "http://www.w3.org/2001/XMLSchema,any"
     end
 
-    class 2218242 "NCName"
+    class 2233218 "NCName"
       visibility package 
       cpp_decl ""
       java_decl ""
